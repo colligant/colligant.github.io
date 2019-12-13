@@ -3,9 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Graduate student in computer science at the University of Montana. Interested
-in applying machine learning to a wide range of problems.
+Graduate student in computer science at the University of Montana. [BRIDGES](https://www.umt.edu/bridges/) trainee. Interested in applying machine learning to real-world problems.
 
 ### More Information
 

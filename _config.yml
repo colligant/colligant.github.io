@@ -6,15 +6,10 @@
 name: tommy colligan
 
 # Short bio or description (displayed in the header)
-description:  
+description: grad student  
 avatar: "https://tcolligan4.github.io/images/photo.jpg"
 # Flags below are optional
 #
-author:
-  name             : "Thomas Colligan"
-  avatar           : "https://tcolligan4.github.io/images/photo.jpg"
-  bio              : "Grad Student"
-  location         : "UM"
 
 locale: "en-US"
 logo: "https://tcolligan4.github.io/images/photo.jpg"

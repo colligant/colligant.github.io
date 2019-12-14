@@ -12,7 +12,7 @@ segmentation.
 ----
 ****
 
-See my cv [here]({{ site.baseurl }}/assets/cv.pdf).
+CV [here]({{ site.baseurl }}/assets/cv.pdf).
 Resume [here]({{ site.baseurl }}/assets/cv.pdf).
 
 ### Contact me

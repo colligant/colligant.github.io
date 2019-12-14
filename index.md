@@ -3,8 +3,7 @@ layout: default
 ---
 ## About
 Graduate student in computer science at the University of Montana. [BRIDGES](ht
-tps://www.umt.edu/bridges/) trainee. I focus on applying machine 
-learning to problems across disciples, mainly focused on computer vision and neural
+tps://www.umt.edu/bridges/) trainee. I focus mainly on computer vision.
 networks.  
 
 ----

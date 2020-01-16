@@ -3,13 +3,16 @@ layout: default
 ---
 ## About
 Graduate student in computer science at the University of Montana. [BRIDGES](ht
-tps://www.umt.edu/bridges/) trainee. I focus mainly on computer vision.
+tps://www.umt.edu/bridges/) trainee. I focus on mapping irrigation using
+satellite imagery.
 
 ----
 ****
 
-CV [here]({{ site.baseurl }}/assets/cv.pdf).
-Resume [here]({{ site.baseurl }}/assets/cv.pdf).
+[CV]({{ site.baseurl }}/assets/cv.pdf)
+
+
+[Resume]({{ site.baseurl }}/assets/cv.pdf)
 
 ### Contact me
 

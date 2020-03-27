@@ -7,12 +7,12 @@ name: tommy colligan
 
 # Short bio or description (displayed in the header)
 description: grad student  
-avatar: "https://tcolligan4.github.io/images/photo.jpg"
+avatar: "/images/img.jpg"
 # Flags below are optional
 #
 
 locale: "en-US"
-logo: "https://tcolligan4.github.io/images/photo.jpg"
+logo: "https://tcolligan4.github.io/images/5682-cropped.jpg"
 # Includes an icon in the footer for each username you enter
 footer-links: 
   email: thomas.colligan@umontana.edu

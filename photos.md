@@ -1,6 +1,6 @@
 ---
 layout: page
-title: photos
+title: Photos
 permalink: /photos/
 ---
 ![_config.yml]({{ site.baseurl }}/images/jumbo_elk.png)

@@ -3,16 +3,16 @@
 #
 
 # Name of your site (displayed in the header)
-name: tommy colligan
+name: Thomas Colligan
 
 # Short bio or description (displayed in the header)
-description: grad student  
+description: Graduate student at the University of Montana.
 avatar: "/images/img.jpg"
 # Flags below are optional
 #
 
 locale: "en-US"
-logo: "https://tcolligan4.github.io/images/5682-cropped.jpg"
+logo: "/images/img.jpg"
 # Includes an icon in the footer for each username you enter
 footer-links: 
   email: thomas.colligan@umontana.edu

@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+<div>
+    <b>
+	<font size="+2">Research notes and ramblings. Posts generally are research notes titled with
+	a date, but sometimes contain multiple days of notes.</font>
+    </b>
+</div>
 <div class="posts">
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}

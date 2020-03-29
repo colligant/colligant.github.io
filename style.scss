@@ -165,8 +165,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 100;
+  width: 100;
+  height: 150px;
   margin-right: 15px;
 
   @include mobile {
@@ -176,12 +176,13 @@ img {
   }
 
   img {
+    width: 200px;
     border-radius: 5px;
   }
 }
 
 .site-info {
-  float: left;
+  float: center;
 
   @include mobile {
     float: none;
@@ -211,8 +212,9 @@ img {
 }
 
 nav {
-  float: right;
+  float: center;
   margin-top: 23px; // @TODO: Vertically middle align
+  margin-left: 0px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 

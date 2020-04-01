@@ -3,19 +3,31 @@ layout: post
 published: true
 ---
 <style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-        }
+.tablelines table, .tablelines td {
+        border: 2px solid #999;
+	padding: 0.5rem;
+	background: white;
+	border-color: lightgray;
+
+}
+.tablelines th {
+	font-weight: bold;
+	background: lightgray;
+}
+.tablelines body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
 </style>
-Tue Mar 31 16:10:45 MDT 2020
 
-I really have no record of how various models perform on various types of input data that I choose,
-so this is an attempt rectify that.
+# Mon Mar 31 16:10:45 MDT 2020
+### Edited on Tue April 1.
 
-All models below were trained with a batch size of 16, and the Casper ones 64. 
-They all have weight decay on the conv. layers of 0.001 and fit three classes:
-irrigated, unirrigated, and uncultivated. The f1 is reported only for the irrigated class.
-
+All models below were trained with a batch size of 16, and the Casper ones 64.  They all have weight
+decay on the conv. layers of 0.001 and fit three classes: irrigated, unirrigated, and uncultivated.
+All trained with unweighted categorical cross entropy. The f1 is reported only for the irrigated
+class.  The f1-score for the irrigated class that I'm trying to achieve is at least 90.
 
 | Model saved in         |     acc | f1       | dataset   | feed     | lr_sch   |
 |:--------:              |:-------:|:--------:|:--------: |:--------:|:--------:|
@@ -41,5 +53,5 @@ recordingf1: UNet, two downsampling steps, ~1m params. Why did this one do so we
 ## Lr schedules
 
 sd: shorter decay time. The second code block in the [link post here]
-ld: longer decay time.  The first code block in the [link post here]
 
+ld: longer decay time.  The first code block in the [link post here]

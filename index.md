@@ -3,8 +3,8 @@ layout: default
 ---
 ## About
 Graduate student in computer science at the University of Montana.
-[BRIDGES](https://www.umt.edu/bridges/) trainee. This website serves as a helpful place to keep my
-research notes organized in the form of a blog. Occasionally I'll post tutorials or examples of
+[BRIDGES](https://www.umt.edu/bridges/) trainee. This blog serves as a helpful place to share my 
+research notes. Occasionally I'll post tutorials or examples of
 interesting projects that I'm working on.
 
 ****

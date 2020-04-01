@@ -6,14 +6,15 @@ published: true
 .tablelines table, .tablelines td, .tablelines th {
         border: 1px solid black;
         }
-</style>Tue Mar 31 16:10:45 MDT 2020
+</style>
+Tue Mar 31 16:10:45 MDT 2020
 
 I really have no record of how various models perform on various types of input data that I choose,
 so this is an attempt rectify that.
 
 All models below were trained with a batch size of 16, and the Casper ones 64. 
 They all have weight decay on the conv. layers of 0.001 and fit three classes:
-irrigated, unirrigated, and uncultivated.
+irrigated, unirrigated, and uncultivated. The f1 is reported only for the irrigated class.
 
 
 | Model saved in         |     acc | f1       | dataset   | feed     | lr_sch   |

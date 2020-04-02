@@ -30,19 +30,22 @@ decay on the conv. layers of 0.001 and fit three classes: irrigated, unirrigated
 All trained with unweighted categorical cross entropy. The f1 is reported only for the irrigated
 class.  The f1-score for the irrigated class that I'm trying to achieve is at least 90.
 
-| Model saved in         |     acc | f1       | dataset   | feed     | lr_sch   |
-|:--------:              |:-------:|:--------:|:--------: |:--------:|:--------:|
-| 5m-params-full-year/   | 0.81    | 0.74     | full-year | RMinU    |  sd      |
-| 5m-params-may-oct/     | 0.75    | 0.53     | may-oct   | RMinU    |  sd      |
-| full-unet-full-year    | 0.81    | 0.69     | full-year | RMinU    |  sd      |
-| full-unet-may-oct      | 0.78    | 0.49     | may-oct   | RMinU    |  sd      |
-| recording-f1           | 0.85    | 0.75     | full-year | RMinU    |  ld      |
-| model_0.903125         | 0.90    | 0.48     | full-year | RMinU    |  ld      |
-| recurrent_0.862.h5     | 0.86    | 0.84     | full-year | RMinU    |  ld      |
-| recurrent_0.878.h5     | 0.88    | 0.77     | full-year | RMinU    |  ld      |
+| Model saved in         |     acc | f1       | dataset             | feed     | lr_sch   |
+|:--------:              |:-------:|:--------:|:--------:           |:--------:|:--------:|
+| 5m-params-full-year/   | 0.81    | 0.74     | full-year           | RMinU    |  sd      |
+| 5m-params-may-oct/     | 0.75    | 0.53     | may-oct             | RMinU    |  sd      |
+| full-unet-full-year    | 0.81    | 0.69     | full-year           | RMinU    |  sd      |
+| full-unet-may-oct      | 0.78    | 0.49     | may-oct             | RMinU    |  sd      |
+| recording-f1           | 0.85    | 0.75     | full-year           | RMinU    |  ld      |
+| model_0.903125         | 0.90    | 0.48     | full-year           | RMinU    |  ld      |
+| recurrent_0.862.h5     | 0.86    | 0.84     | full-year-centroids | RMinURandomStartDate    |  ld      |
+| recurrent_0.878.h5     | 0.88    | 0.77     | full-year-centroids | RMinURandomStartDate    |  ld      |
 |=====
 {: .tablelines}
 
+## Feed: How the data is fed into the model per epoch
+RMinU: Random majority undersampling 
+RandomStartDate: Random start index for raster ingested into model
 
 ## Model descriptions
 
@@ -56,7 +59,8 @@ recurrent_0.862: Recurrent UNet with three downsampling steps (trained on Casper
 
 recurrent_0.878: Same as above.
 
-recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well? 
+recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well
+compared to the same model with many more parameters? Overfitting?
 
 ## Lr schedules
 

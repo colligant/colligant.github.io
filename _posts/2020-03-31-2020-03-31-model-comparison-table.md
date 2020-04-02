@@ -51,13 +51,16 @@ All datasets that have 'centroid' appended are trained with data where tiles are
 centroid of each training polygon and in a raster scan. This results in ~60000 training instances
 of which 5639 are irrigated. small-unet-full-year-centroids trains for 100 steps per epoch instead
 of iterating over the entire irrigated dataset (which would be ~500 steps per epoch (5639 is the min
-number of examples*3 classes = ~16000 instances, divided by batch size 32 is ~500.)) for the sake of
+number of examplesx3 classes = ~16000 instances, divided by batch size 32 is ~500.)) for the sake of
 extracting test statistics more often. The way I have it set up, after 100 steps the entire ~16000
-file corpus (n_irrigated*n_classes) is reshuffled, so there's no guarantee that each epoch sees
-unique irrigated data.
-**
-what does this do
-**
+file corpus (n_irrigatedxn_classes) is reshuffled, so there's no guarantee that each epoch sees
+unique irrigated data. This is kind of unsatisfying, so I'll change it soon so that there are no
+repeats in irrigated samples until there are all exhausted, no matter if it takes multiple epochs to
+exhaust them.
+
+I could possibly put all of the files into a queue of sorts, and then just sequentially empty the
+queue. If the queue is empty, just repopulate it at the end of each epoch.
+
 
 ## Feed: How the data is fed into the model per epoch
 RMinU: Random majority undersampling 

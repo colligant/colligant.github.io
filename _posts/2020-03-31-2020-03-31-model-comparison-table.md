@@ -23,12 +23,13 @@ updated: Thu Apr 2 08:30:14 MDT 2020
 </style>
 
 # Mon Mar 31 16:10:45 MDT 2020
-### Edited on Tue April 1.
 
 All models below were trained with a batch size of 16, and the Casper ones 64.  They all have weight
 decay on the conv. layers of 0.001 and fit three classes: irrigated, unirrigated, and uncultivated.
 All trained with unweighted categorical cross entropy. The f1 is reported only for the irrigated
 class.  The f1-score for the irrigated class that I'm trying to achieve is at least 90.
+
+All of the models were tested on the same data for the two types of sampling: full-year and may-oct.
 
 | Model saved in         |     acc | f1       | dataset             | feed     | lr_sch   |
 |:--------:              |:-------:|:--------:|:--------:           |:--------:|:--------:|

@@ -46,6 +46,7 @@ All of the models were tested on the same data for the two types of sampling: fu
 
 ## Feed: How the data is fed into the model per epoch
 RMinU: Random majority undersampling 
+
 RandomStartDate: Random start index for raster ingested into model
 
 ## Model descriptions

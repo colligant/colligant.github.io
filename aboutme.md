@@ -1,16 +1,11 @@
 ---
-layout: page
-title: Thomas Colligan
-subtitle: Computer Science // MSc candidate // University of Montana
-use-site-title: true
-bigimg:
-  - "/img/jumbo_elk.png": "Elk on Mount Jumbo"
+layout: default
 ---
 ## About
 Graduate student in computer science at the University of Montana.
-[BRIDGES](https://www.umt.edu/bridges/) trainee. This blog serves as a helpful place to share my
+[BRIDGES](https://www.umt.edu/bridges/) trainee. This blog serves as a helpful place to share my 
 research notes. Occasionally I'll post tutorials or examples of
-interesting projects that I'm working on [here](blog).
+interesting projects that I'm working on.
 
 ****
 

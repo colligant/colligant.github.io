@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+updated: Hi
 ---
 <style>
 .tablelines table, .tablelines td {
@@ -37,8 +38,11 @@ class.  The f1-score for the irrigated class that I'm trying to achieve is at le
 | full-unet-may-oct      | 0.78    | 0.49     | may-oct   | RMinU    |  sd      |
 | recording-f1           | 0.85    | 0.75     | full-year | RMinU    |  ld      |
 | model_0.903125         | 0.90    | 0.48     | full-year | RMinU    |  ld      |
+| recurrent_0.862.h5     | 0.86    | 0.84     | full-year | RMinU    |  ld      |
+| recurrent_0.878.h5     | 0.88    | 0.77     | full-year | RMinU    |  ld      |
 |=====
 {: .tablelines}
+
 
 ## Model descriptions
 
@@ -48,10 +52,14 @@ full-unet: Full Unet architecture, but with ~8m params
 
 model_0.903125: UNet, two downsampling steps, ~21m params (trained on Casper)
 
-recordingf1: UNet, two downsampling steps, ~1m params. Why did this one do so well? Batch size 32.
+recurrent_0.862: Recurrent UNet with three downsampling steps (trained on Casper), ~9m params.
+
+recurrent_0.878: Same as above.
+
+recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well? 
 
 ## Lr schedules
 
-sd: shorter decay time. The second code block in the [link post here]
+sd: shorter decay time. The first code block in [this]({% post_url 2020-03-27-2020-03-27-model-comparison %}) post.
 
-ld: longer decay time.  The first code block in the [link post here]
+ld: longer decay time. The second code block in [this]({% post_url 2020-03-27-2020-03-27-model-comparison %}) post.

@@ -41,8 +41,23 @@ All of the models were tested on the same data for the two types of sampling: fu
 | model_0.903125         | 0.90    | 0.48     | full-year           | RMinU    |  ld      |
 | recurrent_0.862.h5     | 0.86    | 0.84     | full-year-centroids | RMinURandomStartDate    |  ld      |
 | recurrent_0.878.h5     | 0.88    | 0.77     | full-year-centroids | RMinURandomStartDate    |  ld      |
+| small-unet-full-year   | 0.89    | 0.75     | full-year           | RMinU    |  sd      |
+| small-unet-full-year-centroids   | -    | -     | full-year-centroids      | RMinU    |  sd      |
 |=====
 {: .tablelines}
+
+## Datasets:
+All datasets that have 'centroid' appended are trained with data where tiles are extracted over the
+centroid of each training polygon and in a raster scan. This results in ~60000 training instances
+of which 5639 are irrigated. small-unet-full-year-centroids trains for 100 steps per epoch instead
+of iterating over the entire irrigated dataset (which would be ~500 steps per epoch (5639 is the min
+number of examples*3 classes = ~16000 instances, divided by batch size 32 is ~500.)) for the sake of
+extracting test statistics more often. The way I have it set up, after 100 steps the entire ~16000
+file corpus (n_irrigated*n_classes) is reshuffled, so there's no guarantee that each epoch sees
+unique irrigated data.
+**
+what does this do
+**
 
 ## Feed: How the data is fed into the model per epoch
 RMinU: Random majority undersampling 

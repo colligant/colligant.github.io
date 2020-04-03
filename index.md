@@ -16,7 +16,7 @@ atmosphere's response to the total solar eclipse of July 2, 2019 in Chile (which
 to Chile!). I've also worked with [AASO](https://umt.edu/aaso/) for multiple summers, doing
 everything from gravity wave research to embedded systems programming. 
 
-This blog serves as a helpful place to share my research notes.
+This website serves as a helpful place to share my research notes.
 Occasionally I'll post tutorials or examples of interesting projects that I'm working on
 [here](blog).
 

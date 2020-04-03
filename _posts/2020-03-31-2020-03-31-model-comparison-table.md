@@ -42,7 +42,7 @@ All of the models were tested on the same data for the two types of sampling: fu
 | recurrent_0.862.h5     | 0.86    | 0.84     | full-year-centroids | RMinURandomStartDate    |  ld      |
 | recurrent_0.878.h5     | 0.88    | 0.77     | full-year-centroids | RMinURandomStartDate    |  ld      |
 | small-unet-full-year   | 0.89    | 0.75     | full-year           | RMinU    |  sd      |
-| small-unet-full-year-centroids   | -    | -     | full-year-centroids      | RMinU    |  sd      |
+| small-unet-full-year-centroids   | 0.85    | 0.81     | full-year-centroids      | RMinU    |  sd      |
 |=====
 {: .tablelines}
 

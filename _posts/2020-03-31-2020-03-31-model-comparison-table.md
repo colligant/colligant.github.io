@@ -42,7 +42,8 @@ All of the models were tested on the same data for the two types of sampling: fu
 | recurrent_0.862.h5     | 0.86    | 0.84     | full-year-centroids | RMinURandomStartDate    |  ld      |
 | recurrent_0.878.h5     | 0.88    | 0.77     | full-year-centroids | RMinURandomStartDate    |  ld      |
 | small-unet-full-year   | 0.89    | 0.75     | full-year           | RMinU    |  sd      |
-| small-unet-full-year-centroids   | 0.85    | 0.81     | full-year-centroids      | RMinU    |  sd      |
+| larger-unet-full-year-centroid-all-bands   | 0.84    | 0.77     | full-year-centroids-all-bands      | RMinU    |  sd      |
+| smaller-unet-random_start_date   | 0.85    | 0.81     | full-year-centroids-all-abands      | RMinURandomStartDate    |  sd      |
 |=====
 {: .tablelines}
 
@@ -78,6 +79,11 @@ model_0.903125: UNet, two downsampling steps, ~21m params (trained on Casper)
 recurrent_0.862: Recurrent UNet with three downsampling steps (trained on Casper), ~9m params.
 
 recurrent_0.878: Same as above.
+
+larger-unet-full-year-centroid-all-bands: ~1m params, trained on centroids only, not data
+extracted with raster scan. 63 band model. This corresponds to 9 7 band rasters.
+
+smaller-unet-random_start_date
 
 recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well
 compared to the same model with many more parameters? Overfitting?

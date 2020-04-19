@@ -44,8 +44,16 @@ All of the models were tested on the same data for the two types of sampling: fu
 | small-unet-full-year   | 0.89    | 0.75     | full-year           | RMinU    |  sd      |
 | larger-unet-full-year-centroid-all-bands   | 0.84    | 0.77     | full-year-centroids-all-bands      | RMinU    |  sd      |
 | smaller-unet-random_start_date   | 0.85    | 0.81     | full-year-centroids-all-abands      | RMinURandomStartDate    |  sd      |
+| full-unet-random_start_date-diff-lr-with-centroids   | 0.96    | 0.89     | full-year-centroids-all-bands      | RMinURandomStartDate    |  diff-lr      |
 |=====
 {: .tablelines}
+Model "full-unet-random_start_date-diff-lr-with-centroids" has 85% precision, 93% recall for the
+irrigated class. This is pretty much the best we're gonna do (I might train a model with
+focal loss just to see what happens). Now I need to comprehensively evaluate out-of-time-domain 
+prediction.
+
+
+
 
 ## Datasets:
 All datasets that have 'centroid' appended are trained with data where tiles are extracted over the
@@ -81,9 +89,11 @@ recurrent_0.862: Recurrent UNet with three downsampling steps (trained on Casper
 recurrent_0.878: Same as above.
 
 larger-unet-full-year-centroid-all-bands: ~1m params, trained on centroids only, not data
-extracted with raster scan. 63 band model. This corresponds to 9 7 band rasters.
+extracted with raster scan. 63 band model. This corresponds to 9 7 band rasters. Steps 
+per epoch: 100.
 
-smaller-unet-random_start_date
+smaller-unet-random_start_date: ~1m params, data extracted with raster scan and centroid
+oversampling. Steps per epoch: 237, batch size 40.
 
 recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well
 compared to the same model with many more parameters? Overfitting?
@@ -93,3 +103,21 @@ compared to the same model with many more parameters? Overfitting?
 sd: shorter decay time. The first code block in [this]({% post_url 2020-03-27-2020-03-27-model-comparison %}) post.
 
 ld: longer decay time. The second code block in [this]({% post_url 2020-03-27-2020-03-27-model-comparison %}) post.
+
+### "Diff-lr"
+```python
+def lr_schedule(epoch):
+    lr = 1e-3
+    rlr = 1e-3
+    if epoch > 25:
+        rlr = lr / 2
+    if epoch > 50:
+        rlr = lr / 4
+    if epoch > 75:
+        rlr = lr / 6
+    if epoch > 100:
+        rlr = lr / 8
+    if epoch > 125:
+        rlr = lr / 16
+    return rlr
+```

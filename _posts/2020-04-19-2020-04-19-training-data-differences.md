@@ -21,6 +21,7 @@ scenes I extract data with a raster scan and I perform off-line oversampling by 
 tiles over the centroids of each labeled polygon. For the TOA data, I just extracted data by a
 raster scan. The labels extracted by a raster scan for each method are the exact same.
 
+
 ### TOA data:
 
 ```python
@@ -30,13 +31,15 @@ raster scan. The labels extracted by a raster scan for each method are the exact
 # class 2: uncultivated
 # class 3: fallow
 
+# The model that produced this confusion matrix
+# was trained with focal loss ($\gamma$ = 0.5).
+
 cmat = np.array([[ 104992,	5944,	 1855, 	  788],
                   [5366,	8613056, 189310,  457],
                   [3596,	97431,	 5243977, 257],
                   [2375,	9165,	 2689,	  3048]])
 
-# And corresponding pixels per class, plus percentage that are given class
-# This is sum over columns
+# And corresponding pixels per class, plus percentage that are given class # This is sum over columns
 pixels_per_class =  array([ 113579, 8808189, 5345261, 17277])
 
 # sum (pixels_per_class)
@@ -45,36 +48,9 @@ pixels_per_class =  array([ 113579, 8808189, 5345261, 17277])
 
 # And percentages:
 array([0.00795131, 0.61663402, 0.37420516, 0.00120951])
-
 ```
 
 ### Surface reflectance:
-
-```python
-# TOA data confusion matrix:
-# class 0: irrigated
-# class 1: unirrigated (includes wetlands)
-# class 2: uncultivated
-# class 3: fallow
-
-cmat = np.array([[ 104992,	5944,	 1855, 	  788],
-                  [5366,	8613056, 189310,  457],
-                  [3596,	97431,	 5243977, 257],
-                  [2375,	9165,	 2689,	  3048]])
-
-# And corresponding pixels per class, plus percentage that are given class
-# This is sum over columns
-pixels_per_class =  array([ 113579, 8808189, 5345261, 17277])
-
-# sum (pixels_per_class)
-14284306
-
-
-# And percentages:
-array([0.00795131, 0.61663402, 0.37420516, 0.00120951])
-
-```
-
 ```python
 # Surface reflectance:
 
@@ -97,6 +73,7 @@ pixels_per_class =  array([  103512, 10120743,  5352722])
 array([0.00664519, 0.64972446, 0.34363035])
 
 ```
+
 Two things to notice:
 
 The percentage of pixels in each class are roughly the same, despite the fact that there 

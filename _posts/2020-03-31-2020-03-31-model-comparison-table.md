@@ -44,15 +44,14 @@ All of the models were tested on the same data for the two types of sampling: fu
 | small-unet-full-year   | 0.89    | 0.75     | full-year           | RMinU    |  sd      |
 | larger-unet-full-year-centroid-all-bands   | 0.84    | 0.77     | full-year-centroids-all-bands      | RMinU    |  sd      |
 | smaller-unet-random_start_date   | 0.85    | 0.81     | full-year-centroids-all-abands      | RMinURandomStartDate    |  sd      |
-| full-unet-random_start_date-diff-lr-with-centroids   | 0.96    | 0.89     | full-year-centroids-all-bands      | RMinURandomStartDate    |  diff-lr      |
+| full-unet-random_start_date-diff-lr-with-centroids   | 0.97    | 0.91     | full-year-centroids-all-bands      | RMinURandomStartDate    |  diff-lr      |
 |=====
 {: .tablelines}
-Model "full-unet-random_start_date-diff-lr-with-centroids" has 85% precision, 93% recall for the
+
+Model "full-unet-random_start_date-diff-lr-with-centroids" has 90% precision, 91% recall for the
 irrigated class. This is pretty much the best we're gonna do (I might train a model with
 focal loss just to see what happens). Now I need to comprehensively evaluate out-of-time-domain 
 prediction.
-
-
 
 
 ## Datasets:

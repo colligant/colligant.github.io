@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+updated: Mon April 20
 ---
 Sun Apr 19 10:21:20 MDT 2020
 
@@ -39,7 +40,8 @@ cmat = np.array([[ 104992,	5944,	 1855, 	  788],
                   [3596,	97431,	 5243977, 257],
                   [2375,	9165,	 2689,	  3048]])
 
-# And corresponding pixels per class, plus percentage that are given class # This is sum over columns
+# And corresponding pixels per class, plus percentage that are given class 
+# This is sum over columns
 pixels_per_class =  array([ 113579, 8808189, 5345261, 17277])
 
 # sum (pixels_per_class)
@@ -58,9 +60,9 @@ array([0.00795131, 0.61663402, 0.37420516, 0.00120951])
 #class 1: unirrigated (wetlands, fallow included in this class)
 #class 2: uncultivated (forest, etc)
 
-cmat =     [[ 96384,   6630,      498]
-	   [  13246,   9852516,   254981]
-	   [  3541,    246689,    5102492]]
+cmat = [[    95217,     7006,     1289],
+	 [    9364, 10038087,    73292],
+	 [    1196,  290288,   5061238]]
 
 # And corresponding pixels per class, plus percentage that are given class
 # This is sum over columns

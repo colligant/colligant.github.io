@@ -162,5 +162,7 @@ feasible.
 Honestly, I don't know what else to do. I might just evaluate the model on certain path/rows which
 have similar sampling dates and call it. I could preprocess the data so that the sampling dates of
 the 2015 data are similar to the 2013 data. This might result in better accuracy.
+## UPDATE! The extraction of training data was incorrect! Let's see if re-extracting and retesting
+results in something better...
 
 

@@ -2,13 +2,14 @@
 layout: post
 published: true
 bigimg:
-  - "/assets/img/tsne.png": "T-SNE visualization of the MNIST dataset seen by a neural network."
+  - "/assets/img/tsne.png": "The loss landscape of a neural network."
 ---
 
 # Gradient Descent
 
 They key idea behind neural networks (and what people mean when they say NNs "learn") is gradient
-descent. This is an idea from calculus that's been around since the 1600s, and is pretty intuitive.
+descent. This blog will go through gradient descent in detail, and describe an application of it in
+computer vision.
 
 Say you're training for a running race and you want to see what your average pace is. You collect a
 bunch of measurements, and plot them on the following graph:

@@ -1,6 +1,8 @@
 ---
 layout: post
 published: true
+bigimg:
+  - "/assets/img/tsne.png": "T-SNE visualization of the MNIST dataset seen by a neural network."
 ---
 
 # Gradient Descent
@@ -137,14 +139,12 @@ where each white pixel corresponded to a bee pixel, we could train a neural netw
 images. This task of labelling each pixel as a bee or not bee is called semantic segmentation. Of
 course, if you had the right labels, you could teach the network to label anything.
 
-Here's a gif of the convolutional neural network when it's trying to see where the bees are in an
-image for the image/label pair above:
+Here's a gif of the convolutional neural network predicting where bees are in the image above:
 
 ![](/assets/img/basic-nn/bee-gif.gif)
 
-The process of refining the predictions that the neural network makes is called training. You can
-see that the network didn't really do so well - the predictions of where the bees are are pretty
-spotty.
+The white areas correspond to where the neural network says there's a bee. As you can see,
+there are a bunch of misclassifications compared to the labels above.
 
 Hopefully this post made neural networks a little more intuitive and clearly explained semantic
 segmentation. Next post, I'll talk about how we apply semantic segmentation to satellite images to

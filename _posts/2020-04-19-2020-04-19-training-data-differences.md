@@ -105,10 +105,10 @@ following I won't report results:
   trained it for 4 days) never started decreasing. This indicates that the train/test datasets
   either 
   - Are too correlated, and it's impossible to overfit
-  - The training set is too large for the model to fit entirely (I mean, it's 100s of millions 
-  of pixels and the network has only ~5m params). I also choose a random start date for the image
-  stack that is fed into the model at train time. That means the dataset to fit is around a factor
-  of 5 larger than the number of labeled tiles (50k).
+  - The training set is too large for the model to fit entirely (I mean, it's precisely 555,414,828
+  pixels and the network has only ~5m params. The pixel count of 555m definitely has repeats). I
+  also choose a random start date for the image stack that is fed into the model at train time. That
+  means the dataset to fit is around a factor of 5 larger than the number of labeled tiles (50k).
 
 I don't know how to test either of these hypotheses. 
 To actually investigate whether or not the images from 2013 and 2015 had similar spacing in

@@ -140,7 +140,11 @@ course, if you had the right labels, you could teach the network to label anythi
 Here's a gif of the convolutional neural network when it's trying to see where the bees are in an
 image for the image/label pair above:
 
-The process of refining the predictions that the neural network makes is called training.
+![](/assets/img/basic-nn/bee-gif.gif)
+
+The process of refining the predictions that the neural network makes is called training. You can
+see that the network didn't really do so well - the predictions of where the bees are are pretty
+spotty.
 
 Hopefully this post made neural networks a little more intuitive and clearly explained semantic
 segmentation. Next post, I'll talk about how we apply semantic segmentation to satellite images to

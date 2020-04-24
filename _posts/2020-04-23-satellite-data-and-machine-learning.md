@@ -64,12 +64,30 @@ through some weight layers and then downsamples it. Downsampling is a common tec
 machine learning / computer vision, and it basically crunches an image down. By crunching the image
 down, the neural network can incorporate more visual context into its decisions. The authors of the
 UNet paper start with an image that's size 572x572 and end up downsampling it until it's only 32
-pixels on each side! We do basically the same thing when mapping irrigation. Interestingly, the
-original UNet was used to segment cells in biomedical images. It does really well at mapping
-irrigation, which means that the two tasks (segmenting cells and mapping irrigation) are really
-similar, at least in the high-dimensional data space in which the neural network resides.
+pixels on each side! After UNet downsamples to a really small dimension, it starts upsampling the
+image and passing it through more weight layers, eventually producing an image.  We do basically the
+same thing when mapping irrigation - we use the same network and similar image sizes. Interestingly,
+the original UNet was used to segment cells in biomedical images. It does really well at mapping
+irrigation, which means that the two tasks (segmenting cells and mapping irrigation) are similar, at
+least in the high-dimensional data space in which the neural network resides.
 
 All in all, mapping and monitoring irrigation in a way that is comprehensive, consistent, and
 timely is what we aspire to do. This will help create actionable information to help inform
 decisions at the FEW nexus. Our group tries to do this by using modern machine learning (UNet) and
 satellite data to map irrigation.
+
+The intersection of modern machine learning and satellite data is a pretty new field. Until
+recently, the computational power wasn't there to run large-scale analysis of remote sensing
+data with machine learning algorithms. Machine learning algorithms are pretty much essential for
+analysing the mountains (petabytes!) of satellite data that's out there. A
+[paper](https://arxiv.org/pdf/1910.10536.pdf) I read recently stated "Only 7.6% of all published
+[Sentinel 2] images taken in 2018" were actually downloaded! That's pretty remarkable considering
+the fact that these satellite missions often cost millions of dollars to get off the ground. One big
+obstacle preventing the usage of all of this satellite data is the computational power required to
+do the analysis, but another is the limited amount of high-quality labeled data. It's hardly
+feasible for a researcher like me to invest the amount of resources Google and Microsoft put into
+labelling data. This is why I think the next frontier for satellite data analysis will be
+unsupervised learning. Unsupervised learning is another branch of machine learning that seeks to
+represent data in meaningful ways without any labels. Given the amount of satellite data out there,
+any algorithm that makes sense of it without human supervision will be really earth-shattering! Some
+really cool things are bound to show up in the future.

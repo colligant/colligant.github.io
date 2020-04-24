@@ -1,6 +1,8 @@
 ---
 layout: post
 published: true
+bigimg:
+  - "/img/irrigation-background.jpg": "irrigation over Kansas"
 ---
 # Satellite data, machine learning, and mapping irrigation
 

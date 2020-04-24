@@ -4,7 +4,6 @@ published: true
 updated: Thu Apr 9
 bigimg:
   - "/img/network.png": "network"
-
 ---
 <style>
 .tablelines table, .tablelines td {

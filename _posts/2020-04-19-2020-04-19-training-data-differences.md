@@ -165,3 +165,5 @@ the 2015 data are similar to the 2013 data. This might result in better accuracy
 ## UPDATE! 
 The extraction of training data was incorrect! Let's see if re-extracting and retesting
 results in something better...
+[see here for a description of what's going on]({% post_url 2020-05-01-2020-05-01-out-of-domain-prediction %}).
+

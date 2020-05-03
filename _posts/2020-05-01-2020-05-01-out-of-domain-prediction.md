@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 ---
 # Out-of-time domain prediction
 
@@ -19,52 +19,162 @@ have data:
 Black represents sampling dates for 2013 and cyan sampling dates for 2015 (2013 is shifted by two
 years so the two time series are overlaid).
 
-Let's zoom in on two path/rows, 38/27 and 36/27. The resulting time series looks like this:
-
-![](/assets/img/2013vs2015two_path_rows.png)
-*Github pages is terrible for hosting images (or I don't know enough about web development).
-Anyways, zoom in on the image to see it better.*
-
-Notice the differences in the sampling dates over the two path/rows? 36/27 has a large gap in
-sampling dates during 2013 while 38/27 has a much smaller gap. The model was trained on the cyan
-sampling dates, and is evaluated on the black dates. What I hope to see happen (by evaluating the
-precision and recall of the models on the 2015 test data) is that the 38/27 has higher precision and
-recall because of the more regular sampling dates.
-```python
-# path/row 36/37 has maximum f1 of .65 for the irrigated class:
-precision = {0: 0.9616480162767039, 1: 0.6820634936901745, 2: 0.9200302362469784}
-recall =    {0: 0.5037033089998402, 1: 0.9735215647980462, 2: 0.4059343310856665}
+The code block below will show the best precision/recall dicts for each path rows. By comparing
+these with the plot above, we can get a grasp on how sampling dates change model performance.
 ```
-The values here are really all over the place and pretty unacceptable. You never want a model with
-98% recall and 68% precision - this indicates way too many false positives. The converse is also
-bad: a model that barely predicts anything to be irrigated but is right almost 100% of the times is
-also useless.
+# 34/27
+p = {0: 0.3925269645608629, 1: 0.9906956126976513, 2: 0.002487157434741173}
+r = {0: 0.27047113470471135, 1: 0.9121665184636042, 2: 0.22526315789473683}
+
+# 39/26
+No irrigated pixels.
+
+# 35/27
+p = {0: 0.3236202238517947, 1: 0.8748457110368135, 2: 0.06506364922206506}
+r = {0: 0.4930902675683623, 1: 0.9850239162753579, 2: 0.006124840221559438}
+
+# 39/27
+p = {0: 0.6134531342088583, 1: 0.9820809914831141, 2: 0.5296232089413723}
+r = {0: 0.8080089052933767, 1: 0.9162726426505028, 2: 0.8479433629693653}
+
+# 36/26
+p = {0: 0.7469135802469136, 1: 0.8770997643389391, 2: 0.8804796228296841}
+r = {0: 0.676450034940601, 1: 0.9984108359352775, 2: 0.0727234263227164}
+
+# 39/28
+p = {0: 0.7766771184917417, 1: 0.6631823522191242, 2: 0.9855370176656513}
+r = {0: 0.9607678434666601, 1: 0.9473155556000862, 2: 0.8506005061934927}
+
+#36/27
+p = {0: 0.9616480162767039, 1: 0.6820634936901745, 2: 0.9200302362469784}
+r = {0: 0.5037033089998402, 1: 0.9735215647980462, 2: 0.4059343310856665}
+
+# 40/27
+p = {0: 0.7384279475982533, 1: 0.7885054442105924, 2: 0.9525328369769717}
+r = {0: 0.41582559979472267, 1: 0.8972833830999626, 2: 0.8992791729790622}
+
+# 36/28
+p = {0: 0.053937229844014285, 1: 0.6960198532280917, 2: 0.7253728374058475}
+p = {0: 0.09111111111111111, 1: 0.8263348583857902, 2: 0.5551177795393815}
+
+# 40/28
+p = {0: 0.8201498751040799, 1: 0.030939102828207134, 2: 0.9989633236896757}
+r = {0: 0.9015193117334798, 1: 0.7908751291630236, 2: 0.8767873009546112}
+
+# 37/26
+p = {0: 0.3860392967942089, 1: 0.6630553208017307, 2: 0.8704578127547316}
+r = {0: 0.25056213712789877, 1: 0.9457020903515667, 2: 0.420749337345082}
+
+# 41/27
+
+p = {0: 0.885130231432949, 1: 0.20578511201423139, 2: 0.9950364384563047}
+r = {0: 0.8930518265397446, 1: 0.7663876590289672, 2: 0.9441502913044707}
+
+# 37/28
+p = {0: 0.7136681500317864, 1: 0.9531156265545754, 2: 0.9407785320875429}
+r = {0: 0.8150137941048352, 1: 0.9756467444624163, 2: 0.8882304669123618}
+
+# 41/28
+No irrigated pixels.
+
+# 38/27
+p = {0: 0.6215097144070496, 1: 0.8612286286196551, 2: 0.23150914015305288}
+r = {0: 0.38304833362414936, 1: 0.9065063493167873, 2: 0.16452250108993438}
+
+# 42/27 	  
+No irrigated pixels.
+
+# 38/27
+p = {0: 0.19284991409541294, 1: 0.9532582146382159, 2: 0.9175719154345171}
+r = {0: 0.7746265834751371, 1: 0.9570711813861941, 2: 0.8958911202848496}
+
+# 38/28
+p = {0: 0.2857907412362858, 1: 0.9615231460462531, 2: 0.9149192715464026}
+r = {0: 0.33034333436436747, 1: 0.9199828911793351, 2: 0.9593757831360198}
+```
+
+The precision/recall dictionaries above (unformatted, I know) represent the highest values over that
+LANDSAT path row. There are different values of precision/recall because the chosen start date can
+vary.  Examine path/row 37/28. The model did the best across all classes, and the sampling dates between
+the two years are pretty regular. In contrast, the model did poorly on path/row 36/28, which has
+pretty regular sampling dates after the second image was taken. However, there are no regular images
+between April/June! Basically, this is out-of-domain prediction. 
 
 Even though the model does well when there are regular sampling dates, we can't always be assured
 that that data will be available (well, we actually might be able to be assured. I might just not be
-able to download it!). An alternative solution to stacking images by date and hoping the network
-implicitly learns some date dependence is to ingest a date feature into the model. That's what I'm
-going to try next.
+able to download it!). 
 
-The date feature is just going to be a raster of floats that encodes the days since January 1st.
-Since I'll give the model this information, hopefully it will learn to deal with irregular sampling
-dates, and rely less on temporal signals. I'll also randomly shuffle the order in which images are
-fed into the model, since with that date information, the model could feasibly learn to re arrange
-the input rasters in a way that is helpful for making decisions. I also might feed the network less
-than 14 images - maybe 8 randomly chosen from the time range? This will hopefully make it learn some
-robustness to random sampling dates.
+## Reworking assumptions (and input data!)
 
-Another problem with stacking images by date is that you have to choose a start date. For 2015 (in
-the first figure) what image should I first ingest into the model for optimal results? The image
-from May or April? It would seem clear cut but when your training set has such variation in sampling
-dates (again, the cyan dots in the figures above), what is the right thing to choose? If we force
-the model to learn a relatively time-invariant representation of irrigation, this problem is no
-longer.
+The working assumption for this project is that a neural network is a complicated enough function to
+take a stack of images (implicitly organized by date captured), and learn a representation of
+irrigation abstract enough to correctly identify irrigated pixels. This assumption is definitely
+true, as the networks readily reach high accuracy on irrigated test sets. However, neural networks
+are good at learning distributions of data and generalizing within that distribution, but they have
+almost no generalization power *outside* of that distribution. 
 
-It also important to note that if LSAT 8 wasn't launched in 2013 and only sporadically captured
-images during that year that this project would most likely be done, without any consideration of
-sampling dates or temporal offsets. The reason why I say this is because the model performs well on
-out-of-time domain data when sampling dates are similarly spaced to the training set (I mean, duh).
+With out-of-time-domain prediction we assume that changing the year where
+we want to have irrigated predictions won't be out-of-distribution. 
+There are a couple of reasons why this is reasonable:
+- The sensors on the satellites don't change from year to year, meaning the same EM wave powers are
+  recorded year to year
+- Irrigated land doesn't change in phenology or shape from year to year (center pivots, flood
+  irrigation are here to stay)
+
+However, the factor I didn't consider is the difference in available sampling dates from year to
+year. Changing these significantly makes the problem suddenly out-of-distribution, and the neural
+networks do poorly. This is the problem that I've been describing and battling with for a few
+months. The solution is to relax the assumptions that are baked into the NN. The assumption that it
+learns is that it will recieve a stack of images organized in a somewhat meaningful manner. Since
+the stack of images can't always be organized in a meaningful way, I'm going to throw this
+assumption out of the window and add a little more information to the model.
+
+The thing I'm going to try is adding a date raster on to the feature stack, and randomly shuffling
+the input rasters. In this way, it should learn to combine features based on their corresponding
+date and hopefully rely less on a static set of input dates. 
+
+There are two options (and I'm not convinced that they're actually different)
+- Encode date as days since January, or something like that
+- Encode date as a categorical feature
+
+I've written code to encode date as a "days since January" raster and we'll see how that works out.
+So far, the training statistics indicate the model is training a lot slower with random input
+dates and maybe has already converged around 85% train f1 and 78% train accuracy... (compared to
+like 97, 98 in both of those categories for the other input data). I'll update this after a few
+days.
+It's kind of hard to verify results visually, so I'll post the code that I'm using to split the
+raster stack and shufflei it. 
+```python
+# image_stack.shape (112, 7760, 7760) 
+# I add the date rasters onto the end of the image stack, so a image stack
+# of 14 7-band images becomes 14*(7+1) = 112 bands.
+n_images = image_stack.shape[0] // 8
+n_bands = 7
+
+# Make multidimensional array of shape (n_images, n_bands).
+# Each row contains the indices of the image at that row index
+# Alternatively, each row is a list of numbers that corresponds to where
+# an image is in the original image stack, where an image is 7 contiguous bands
+# taken at the same date
+indices = np.asarray([np.arange(i, i+n_bands) for i in range(0, n_images*n_bands, n_bands)])
+# min_images is a hyperparameter that chooses the number of images fed into the model
+# choose dates randomly, no replacement, randomly ordered through time
+image_index = np.random.choice(indices.shape[0], size=min_images, 
+	replace=False)
+# now add on the date raster on the end - the date raster is appended to the 
+# end of the original image.
+indices = indices[image_index, :].ravel()
+# n_images*n_bands + image_index says grab the bands starting
+# from n_images*n_bands that are in image_index
+image_indices = np.hstack((indices, n_images*n_bands + image_index))
+# np hstack stacks them horizontally, basically concatenation in this case.
+return image_stack[image_indices]
+```
+
+
+One thing I'd also like to include is a simple timeline of work on this project, which is below.
+
+## Timeline, progress, setbacks...
 
 This project would also have moved forward a lot faster if I had investigated out-of-domain
 accuracy sooner. This is basically the timeline of the project and the various steps I took to get
@@ -77,9 +187,9 @@ to where I am now:
   during a lab meeting on Dec 4, 2018). David's project used 1-d features (single pixel stack) and
   ingested those into a two-layer MLP. Pretty simple, and it took ~5 hours to get predictions for a
   single image. Test statistics (precision, recall) weren't reported.
-- Feb 2 2019: I added on the capability to extract tiles onto David's project, and added a simple conv-net
-  architecture. This architecture consisted of a few conv. layers and a final linear layer to do the
-  predictions. As such, it again took ~5 hrs to evaluate a LANDSAT tile.
+- Feb 2 2019: I added on the capability to extract tiles onto David's project, and added a simple
+  conv-net architecture. This architecture consisted of a few conv. layers and a final linear layer
+  to do the predictions. As such, it again took ~5 hrs to evaluate a LANDSAT tile.
 - Feb 19, 2019: Changed the model to a FCNN (can't remember the exact architecture), so that
   evaluation of images took minutes instead of hours. I also added some climate features into the
   data that the model ingested (precip, et).
@@ -91,8 +201,8 @@ to where I am now:
   - Tried offline hard negative/positive mining.
   - Implemented binary and multiclass focal loss.
   - Implemented dice loss for the binary case.
-  - Experimented with different sampling techniques.
-  This problem was resolved by random majority undersampling.
+  - Experimented with different sampling techniques.  This problem was resolved by random majority
+    undersampling.
 - Work on this problem continued until the end of school, at which point I worked on eclipse stuff
   for the whole summer (May through August). This was pretty bad for research productivity (as in I
   didn't work on irrigation stuff at all).
@@ -110,11 +220,9 @@ to where I am now:
   and October! The problem that I was describing above with the different sampling dates was
   exacerbated. However, I didn't do any formal evaluation of how the model was doing because there
   wasn't ground truth data available to me at the time. This is the figure that piqued my interest:
-  ![](/assets/img/zach_presentation-1.png)
-  The image on the bottom right really didn't make sense to me - the irrigated diversions probably
-  didn't change by 3x between years. The large white spots on the images are where I masked out
-  clouds.
-
+  ![](/assets/img/zach_presentation-1.png) The image on the bottom right really didn't make sense to
+  me - the irrigated diversions probably didn't change by 3x between years. The large white spots on
+  the images are where I masked out clouds.
 - I then presented the results of this model at AGU - like Dec 9, 2019 or something.
 - Over the break, I worked on the fish-net problem for MPG ranch, so I wasn't able to do much on the
   irrigation project. 

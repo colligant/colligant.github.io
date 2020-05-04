@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+img: /assets/img/tsne.png
 bigimg:
   - "/assets/img/tsne.png": "The loss landscape of a neural network."
 ---

@@ -1,6 +1,8 @@
 ---
 layout: post
 published: true
+img: /img/irrigation-background.jpg
+description: Yadata
 bigimg:
   - "/img/irrigation-background.jpg": "irrigation over Kansas"
 ---

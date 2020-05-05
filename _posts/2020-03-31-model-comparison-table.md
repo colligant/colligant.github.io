@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-updated: Thu Apr 9
+updated: May 5, 2020
 bigimg:
   - "/img/network.png": "network"
 img: /assets/post-images/sky.jpg
@@ -48,14 +48,15 @@ All of the models were tested on the same data for the two types of sampling: fu
 | larger-unet-full-year-centroid-all-bands   | 0.84    | 0.77     | full-year-centroids-all-bands      | RMinU    |  sd      |
 | smaller-unet-random_start_date   | 0.85    | 0.81     | full-year-centroids-all-abands      | RMinURandomStartDate    |  sd      |
 | **full-unet-random_start_date-diff-lr-with-centroids**   | 0.97    | 0.91     | full-year-centroids-all-bands      | RMinURandomStartDate    |  diff-lr      |
+| random_permute   | 0.66    | 0.74     | full-year-centroids-all-bands      | RMinURandomPermute    |  diff-lr      |
 |=====
 {: .tablelines}
 
 Model "full-unet-random_start_date-diff-lr-with-centroids" has 90% precision, 91% recall for the
 irrigated class. This is pretty much the best we're gonna do (I might train a model with
 focal loss just to see what happens). Now I need to comprehensively evaluate out-of-time-domain 
-prediction.
-
+prediction. Out of time domain prediction does poorly on path/rows with different sampling dates (to
+be expected). So I'm trying to train a model with a random permutation of images.
 
 ## Datasets:
 All datasets that have 'centroid' appended are trained with data where tiles are extracted over the
@@ -78,6 +79,8 @@ RMinU: Random majority undersampling
 
 RandomStartDate: Random start index for raster ingested into model
 
+RandomPermute: Random permutation of n images w/ a date feature.
+
 ## Model descriptions
 
 5m-params: UNet w two downsampling steps, ~5m params
@@ -99,6 +102,8 @@ oversampling. Steps per epoch: 237, batch size 40.
 
 recordingf1: UNet, two downsampling steps, ~1m params. Batch size 32. Why did this one do so well
 compared to the same model with many more parameters? Overfitting?
+
+random_permute: UNet, full, 5m params, batch size 16, only 8 stacked images fed in to model.
 
 ## Lr schedules
 

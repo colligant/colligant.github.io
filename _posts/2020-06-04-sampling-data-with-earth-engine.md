@@ -35,4 +35,40 @@ we'll see what happens when I re-extract the data in a different scheme.
 
 To do a raster scan over the data (making sure each labeled pixel is only sampled once), I generated
 a grid of points over the test data (spaced according to 30m * 256), and I'm sampling a 256X256 tile from those points. 
+# EarthEngine Arrays.sample() method.
+This is a method that samples random points within bounds from an array. The array can be composed
+of columns of pixels or 2-d arrays of pixels. Points that are masked in the array are not sampled
+(this makes sense, right?). The point where this gets frustrating is when you don't want to sample
+randomly from the interior of a polygon.  There's no functionality in EE to sample from an arbitrary
+grid of points over an array, with easily interpretable spacing (there is sampleRegions, but I
+haven't really pursued using this because you have to specify the point spacing by a "scale"
+parameter, which is sensitive to projections. I think explicitly specifying a projection in EE is
+frowned upon). This means that sampling at points requires doing some geospatial analysis to
+generate a grid of points over the ROI, and then sampling at those points. However, if the 
+data has masked pixels at any of those points, those samples will be thrown out (this is intended
+functionality, and makes sense, except for my use case). 
 
+# Training with AI platform: Code and example commands
+
+AI platform is Google's service for training machine learning models. It's hosted in the cloud and
+has customizable machines that you can run your models on. AI platform uses Google Cloud Storage
+(GCS) to access your training/evaluation data. This is great for my use case, as EarthEngine can
+export labeled data tiles directly to GCS. 
+Submitting a training job to AIP is also pretty easy: you just wrap all of your code into a python
+module and off you go. The gcloud command is used to submit jobs to AIP, and you can also test all
+of your code before submitting it with a few flags. To test your code locally, run this command: 
+```shell
+gcloud ai-platform local train \
+--package-path ai-platform-module \
+--module-name ai-platform-module.train_model \
+--job-dir local-train-output
+```
+All of the arguments after the -- flags are the names that the user provides. For example, I
+wrapped all of my training code in a directory named ai-platform-module (imaginative, I know), and
+within that the model training happens within train_model.py (--module-name
+ai-platform-module.train_model). The interesting thing about this command (and useful!) is that if
+you have all of your data stored in GCS, you can still test your code on your local machine. When
+the gcloud service is started, it interprets paths prefixed with "gs://" as GCS buckets, and
+actually downloads and locally caches the required data. This was useful for me as I had an
+incorrect feature spec for deserializing TFRecord files, and I was able to fix it before submitting
+the job to the cloud.

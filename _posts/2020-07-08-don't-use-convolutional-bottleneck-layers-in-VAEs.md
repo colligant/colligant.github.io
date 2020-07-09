@@ -19,21 +19,20 @@ are just one slice of the entire generative modeling spectrum.
 ## The problem
 
 As stated above, I wanted to make a FCNN-VAE to work on any size image.
-I created the model (code here[]), and trained it. One note about prototyping:
-MNIST is your friend. The small amount of data and relatively easy problem lets
-you test ideas quickly. 
-When I sampled from its latent space, I was getting bizarre results. I scratched my head,
-and started debugging the code. Maybe I had the reparameterization trick wrong? Maybe
-the generation of random normal numbers wasn't working correctly? I validated the data on 
-MNIST test data - it wasn't overfitting on the training set, so I knew I should be able to
-sample from the latent space. Whatever I tried, the samples ended up looking like the image
-on the right:
+I created the model (code [here](https://github.com/tcolligan4/vae-experiments-keras)),
+and trained it. One note about prototyping: MNIST is your friend. The small amount of data and
+relatively easy problem lets you test ideas quickly.  When I sampled from its latent space, I was
+getting bizarre results. I scratched my head, and started debugging the code. Maybe I had the
+reparameterization trick wrong? Maybe the generation of random normal numbers wasn't working
+correctly? I validated the data on MNIST test data - it wasn't overfitting on the training set, so I
+knew I should be able to sample from the latent space. Whatever I tried, the samples ended up
+looking like the image on the left:
 
 FCNN-VAE samples             | FC-VAE samples
 :-------------------------:|:-------------------------:
 ![](/assets/img/fcnn_vae.png) | ![](/assets/img/fc_vae.png)
 
-For some contrast, "real" samples from a working VAE look like the left hand image.
+For some contrast, "real" samples from a working VAE look like the right hand image.
 
 The first image is pretty bad for a VAE. This is more what I'd expect when sampling
 from a regular autoencoder because of the poorly-behaved latent space.

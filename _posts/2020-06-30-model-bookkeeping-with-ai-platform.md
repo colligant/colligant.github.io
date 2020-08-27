@@ -40,3 +40,24 @@ of training steps by just "raster scanning" over the input images.
 Performance indicates otherwise. Re-extracting data, then retraining the
 final model, and moving on.
 
+## remote-july17-2mparams-weight-decay
+Only reached ~0.5 f1. I was surprised by this as usually 
+these models do much better.
+This is the first model I trained after re-extracting
+training/test/validation data. Doing this (stupidly) took like 5 days,
+because I downloaded tiles over every single training polygon. This
+was trained with a weight decay w/ constant 0.01 on every conv. layer.
+Batch norm after every convolution and relu activations. Trained
+for 200 epochs. 300 steps per epoch, and about the same
+number of validation steps.
+
+## remote-july17-2mparams-weight-decay
+Same training parameters as above, but w/ a weight decay constant
+of 0.001. 600 steps per epoch, 300 epochs. Different lr schedule.
+
+## 0.01wd-nondvi-july28-2mparams-final-split-balanced
+0.01 weight decay, unet w/ 2m params, no ndvi feature. Trained for
+300 epochs reaching a test f1 of 
+
+
+

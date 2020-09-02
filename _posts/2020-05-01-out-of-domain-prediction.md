@@ -3,6 +3,18 @@ layout: post
 published: true
 img: /assets/post-images/mountains.jpg
 ---
+### Update:
+All of the problems described below could most likely be solved by a network that
+actually considers time. The U-Net w/o explicit temporal dependence was chosen
+b/c it's good for semantic segmentation. I didn't pivot NN architectures because 
+using a convolutional recurrent neural network took way too much time and memory to train
+and evaluate. I needed a NN that could evaluate over a large spatial region quickly, and
+the LSTM-CNN that I tried was way too slow. This was before I realized that incorporating
+an attention mechanism would be probably the best way forward. That's for another project/paper.
+
+Oh yeah, the problems described below were solved by incorporating much more data, downloaded
+with the help of Google Earth Engine. I don't know why I didn't investigate GEE as an option
+earlier. For any remote sensing application, you should probably use GEE.
 
 # Out-of-time domain prediction
 

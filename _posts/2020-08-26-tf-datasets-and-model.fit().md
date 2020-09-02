@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 ---
 
 tf/keras provides a model.fit() method that takes care

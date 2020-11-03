@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 ---
 
 tf/keras provides a model.fit() method that takes care
@@ -207,7 +207,7 @@ class BatchCounter(tf.keras.metrics.Metric):
         self.count = None
         self.count = self.add_weight(name='count', shape=(batch_size,1))
         
-    def update_state(self, y_true, y_pred, sample_weight):
+    def update_state(self, y_false, y_pred, sample_weight):
         self.count.assign(sample_weight)
         
     def result(self):

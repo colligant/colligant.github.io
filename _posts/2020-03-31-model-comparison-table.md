@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 updated: May 5, 2020
 bigimg:
   - "/img/network.png": "network"

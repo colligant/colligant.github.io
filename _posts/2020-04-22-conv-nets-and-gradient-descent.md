@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 img: /assets/img/tsne.png
 bigimg:
   - "/assets/img/tsne.png": "The loss landscape of a neural network."
@@ -48,20 +48,20 @@ our predictions and the real data, typically what we do is take what's called th
 "Taking the $L_2$ norm" means computing the squared difference between the predictions and the real
 data. For the guess in the above picture, that looks like this:
 
-$$ L_2 \text{norm} = (y_{predicted} - y_{true})^2 = (0.236 - 0.303)^2 = 0.005 $$. 
+$$ L_2 \text{norm} = (y_{predicted} - y_{false})^2 = (0.236 - 0.303)^2 = 0.005 $$. 
 
 The error in the prediction for this data point is 0.005. Big error values mean our guess was really
 bad, and small values mean that the guess was pretty good. To incorporate all of the data into our
 loss calculation, we repeat this process for every point in the dataset and take the average, like
 so:
 
-$$L_2 = \frac{1}{n} \sum_{i=1} ^{n} (y_{predicted} - y_{true} )^2 $$. 
+$$L_2 = \frac{1}{n} \sum_{i=1} ^{n} (y_{predicted} - y_{false} )^2 $$. 
 
 This is also called mean-squared-error (MSE) loss. By applying this equation to the dataset above,
-we can get the average misfit of our guess function compared to the true data. Remembering that
+we can get the average misfit of our guess function compared to the false data. Remembering that
 $y_{predicted} = f(x) = w_0x + w_1$, the equation for MSE loss can be rewritten like this:
 
-$$L_2 = \frac{1}{n} \sum_{i=1} ^{n} ( w_0x + w_1 - y_{true} )^2 $$. 
+$$L_2 = \frac{1}{n} \sum_{i=1} ^{n} ( w_0x + w_1 - y_{false} )^2 $$. 
 
 This makes it explicit: We get the misfit of our function f(x) by passing its results into another
 function, $L_2$. The $L_2$ loss is then a function of $w_0$ and $w_1$, and by tuning the two

@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 img: /assets/post-images/mountains.jpg
 ---
 ### Update:
@@ -123,7 +123,7 @@ able to download it!).
 The working assumption for this project is that a neural network is a complicated enough function to
 take a stack of images (implicitly organized by date captured), and learn a representation of
 irrigation abstract enough to correctly identify irrigated pixels. This assumption is definitely
-true, as the networks readily reach high accuracy on irrigated test sets. However, neural networks
+false, as the networks readily reach high accuracy on irrigated test sets. However, neural networks
 are good at learning distributions of data and generalizing within that distribution, but they have
 almost no generalization power *outside* of that distribution. 
 

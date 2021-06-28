@@ -2,6 +2,7 @@
 layout: post
 title: First post and AGU
 img: /img/agu-poster.png
+published: false
 ---
 
 I'm writing this post on the flight back from AGU. 

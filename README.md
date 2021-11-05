@@ -1,2 +1,2 @@
-# Siqi-L.github.io
-Siqi Liu's homepage at https://siqi-l.github.io
+# colligant.github.io
+thomas colligan's homepage at https://colligant.github.io

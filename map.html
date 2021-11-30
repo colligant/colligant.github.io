@@ -79,7 +79,7 @@ input {
 	    var lat = e.latlng.lat;
 	    var lon = e.latlng.lng;
 	    var content = `
-		<form action="http://formspree.io/f/xbjwraww", method="POST">
+		<form action="http://formspree.io/f/xbjwraww"  method="POST">
 		<input type="hidden" name="latitude" value=` + lat + ' >' + '<input type="hidden" name="longitude" value=' + lon + ` />
 		<span>why does this place matter to you?</span>
 		<textarea placeholder="Tell me why this place is special to you!  It could be anywhere - a really good restaurant, a national park you've always wanted to visit, your home, a backpacking location, anything! There is no character limit, nor restriction on what you can write. Once you've sent me your message, I'll put a point on the map." name="message" id="shapeDesc" cols="40" rows="10" required

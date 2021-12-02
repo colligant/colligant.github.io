@@ -64,7 +64,7 @@
 
 
   <script>
-	var map = L.map('map').setView([46.947, -113.13], 8);
+      var map = L.map('map', {tap: false}).setView([46.947, -113.13], 8);
 
 	var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	    attribution: 'Tiles &copy; Esri &mdash;'
@@ -104,14 +104,13 @@
 	    const form = document.forms['submit-to-google-sheet']
 
 	    form.addEventListener('submit', e => {
-		console.log('it doesnt work without this?');
-		e.preventDefault()
+		e.preventDefault();
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response => alert('entry submitted successfully :)'))
 		  .catch(error => alert('uh oh.. something went wrong. Let tommy know.'))
 	      });
 
-	    }
+	};
 
   </script>
 

@@ -6,37 +6,37 @@
 
 <style>
 
-latlonbox {
+.latlonbox {
    font:12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
    text-align: center;
 
 }
-textarea {
+.textarea {
    font:12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
    resize: none
 }
-input {
-   font-family:"Times New Roman", Times, serif;  
+.input {
    font:12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .custom-popup .leaflet-popup-content {
     max-width: 1000px;
-    height: 375;
+    height: 375px;
   }
 .custom-popup .leaflet-popup-content-wrapper {
   background:#2c3e50;
   color:#fff;
   font-size:16px;
   line-height:24px;
-  height: 375;
+  height: 300px;
+  width: 400px;
   }
 .custom-popup .leaflet-popup-content-wrapper a {
   color:rgba(255,255,255,0.5);
   }
 .custom-popup .leaflet-popup-tip-container {
-  width:30px;
-  height:15px;
+  width:0px;
+  height:0px;
   }
 .custom-popup .leaflet-popup-tip {
   border-left:15px solid transparent;
@@ -49,15 +49,18 @@ input {
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <body>
+    <span class="textarea"><h3><b>Click on the map to add a point.</b></h3></span>
 
   <div class='custom-popup' id='map' style="height: 75vh"></div>
 
   <div class="latlonbox" style='text-align:center'>
-  <form>
-      <p>
-  <input type="text" class="blocktext" style="width: 350px; border:0px;" name="lat-lng" id="lat-lng" />
-  </form>
+      <form>
+	  <p>
+	  <input type="text" class="blocktext" style="width: 350px; border:0px;" name="lat-lng" id="lat-lng" />
+      </form>
   </div>
+  <p>
+
 
 
   <script>
@@ -78,29 +81,39 @@ input {
 	    var popup = L.popup()
 	    var lat = e.latlng.lat;
 	    var lon = e.latlng.lng;
+	    var lonForm = '<input type="hidden" name="longitude" value=' + lon + '>'
+	    var latForm = '<input type="hidden" name="latitude" value=' + lat + '>'
 	    var content = `
-		<form method="POST" action="http://formspree.io/f/xbjwraww">
-		<input type="hidden" name="latitude" value=` + lat + ' >' + '<input type="hidden" name="longitude" value=' + lon + ` />
-		<span>why does this place matter to you?</span>
-		<textarea placeholder="Tell me why this place is special to you!  It could be anywhere - a really good restaurant, a national park you've always wanted to visit, your home, a backpacking location, anything! There is no character limit, nor restriction on what you can write. Once you've sent me your message, I'll put a point on the map." name="message" id="shapeDesc" cols="40" rows="10" required
-		></textarea>
-		</br>
-		<button type="submit">send!</button>
-		</form>
-	    `
+			  <form name="submit-to-google-sheet">
+			  ` + lonForm + latForm + 
+		          `
+			    <textarea class="textarea" name="message" rows="12" cols="50" placeholder=
+			    "Tell me why this place is special to you!  It could be anywhere - a really good restaurant, a national park you've always wanted to visit, your home, a backpacking location, anything! There is no character limit, nor restriction on what you can write.
+			    "
+			    ></textarea>
+			    <button class="textarea" type="submit">send!</button>
+			  </form> 
+		    `
+
 	    var popLocation= e.latlng;
 	    popup.setContent(content)
 	    popup.setLatLng(popLocation);
 	    popup.openOn(map);        
-	}
 
-	function saveIdIW() {
-	     var sName = $('#emailTitle').val();
-	     var sDesc = $('#shapeDesc').val();
-	     console.log(sName);
-	     console.log(sDesc);
-}
+	    const scriptURL = 'https://script.google.com/macros/s/AKfycbyGBKwHWuznqh8qa3sQwQOugspaGsxdehKE-FXu_ICCrn8clJ1olAZ9KOTAFpwsCYl8AA/exec'
+	    const form = document.forms['submit-to-google-sheet']
+
+	    form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		  .then(response => alert('entry submitted successfully :)'))
+		  .catch(error => alert('uh oh.. something went wrong. Let tommy know.'))
+	      });
+
+	    }
+
   </script>
+
 
   <div style="text-align:center;">
       <p>

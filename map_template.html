@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <body>
-    <span class="textarea"><h3><b>Click on the map to add a point.</b></h3></span>
+    <span class="textarea"><h3><b>Click on the map to add a point. See what others have said by clicking on markers.</b></h3></span>
 
   <div class='custom-popup' id='map' style="height: 75vh"></div>
 
@@ -64,18 +64,7 @@
 	}).addTo(map);
 
         map.on('click', onMapClick);
-        var marker0 = L.marker([47.01001273, -113.1427002]).addTo(map);		
-var popup0 = marker0.bindPopup("Hi, I\'m testing from Chrome.")		
-var marker1 = L.marker([46.64212967, -113.0932617]).addTo(map);		
-var popup1 = marker1.bindPopup("Hi, I\'m testing from safari.")		
-var marker2 = L.marker([47.03202127, -114.2578125]).addTo(map);		
-var popup2 = marker2.bindPopup("Hi! Testing from mobile")		
-var marker3 = L.marker([47.68497488, -122.3065531]).addTo(map);		
-var popup3 = marker3.bindPopup("i like this house because it’s whet my family lives!!!!!!!!!")		
-var marker4 = L.marker([47.00831484, -113.0740356]).addTo(map);		
-var popup4 = marker4.bindPopup("Sure, no worries. I actually had no experience with any of that when I found your question -- I was trying to figure out how to do something similar at the time. So it was a good exercise for me to figure out how to do it, and much of my reason for answering was to document what I had discovered. Good that you were able to find such an effective alternate solution. :-)")		
-var marker5 = L.marker([47.05112767, -112.9064941]).addTo(map);		
-var popup5 = marker5.bindPopup("I am another test of the working website.")
+        // This content will be replaced.
 
 	function onMapClick(e) {
 	    document.getElementById('lat-lng').value = 'you\'ve selected ' + e.latlng.lat + ", " + e.latlng.lng;

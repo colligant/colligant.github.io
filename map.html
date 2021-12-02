@@ -87,7 +87,7 @@
 			  <form name="submit-to-google-sheet">
 			  ` + lonForm + latForm + 
 		          `
-			    <textarea class="textarea" name="message" rows="12" cols="50" placeholder=
+			    <textarea required class="textarea" name="message" rows="12" cols="50" placeholder=
 			    "Tell me why this place is special to you!  It could be anywhere - a really good restaurant, a national park you've always wanted to visit, your home, a backpacking location, anything! There is no character limit, nor restriction on what you can write.
 			    "
 			    ></textarea>
@@ -104,6 +104,7 @@
 	    const form = document.forms['submit-to-google-sheet']
 
 	    form.addEventListener('submit', e => {
+		console.log('it doesnt work without this?');
 		e.preventDefault()
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response => alert('entry submitted successfully :)'))

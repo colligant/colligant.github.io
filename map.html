@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <body>
-    <span class="textarea"><h3><b>Click on the map to add a point.</b></h3></span>
+    <span class="textarea"><h3><b>Click on the map to add a point. See what others have said by clicking on markers.</b></h3></span>
 
   <div class='custom-popup' id='map' style="height: 75vh"></div>
 
@@ -75,7 +75,15 @@ var popup3 = marker3.bindPopup("i like this house because it’s whet my family 
 var marker4 = L.marker([47.00831484, -113.0740356]).addTo(map);		
 var popup4 = marker4.bindPopup("Sure, no worries. I actually had no experience with any of that when I found your question -- I was trying to figure out how to do something similar at the time. So it was a good exercise for me to figure out how to do it, and much of my reason for answering was to document what I had discovered. Good that you were able to find such an effective alternate solution. :-)")		
 var marker5 = L.marker([47.05112767, -112.9064941]).addTo(map);		
-var popup5 = marker5.bindPopup("I am another test of the working website.")
+var popup5 = marker5.bindPopup("I am another test of the working website.")		
+var marker6 = L.marker([48.85556385, -113.4558105]).addTo(map);		
+var popup6 = marker6.bindPopup("hi")		
+var marker7 = L.marker([41.05035952, -104.8535156]).addTo(map);		
+var popup7 = marker7.bindPopup("middle of country")		
+var marker8 = L.marker([37.57443916, -83.05664063]).addTo(map);		
+var popup8 = marker8.bindPopup("awldne ")		
+var marker9 = L.marker([46.13456717, -114.3347168]).addTo(map);		
+var popup9 = marker9.bindPopup("ASSWIPES")
 
 	function onMapClick(e) {
 	    document.getElementById('lat-lng').value = 'you\'ve selected ' + e.latlng.lat + ", " + e.latlng.lng;

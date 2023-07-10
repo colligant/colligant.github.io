@@ -1,0 +1,90 @@
+
+<HTML>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+<TITLE>Thomas Colligan</TITLE>
+
+<style type="text/css">
+	a{text-decoration:none;}
+	a:visited{color:#0E547F;}
+	a:link{color:#0E547F;}
+	a:hover{text-decoration:none;}
+	p.ex
+	{height:auto; 
+	width:500px;
+	text-align:justify;
+    }
+    .alignleft { float: left; }
+    .alignright { float: right; }
+    hr
+    { width:800px; }
+	body
+	{
+	text-align:justify;
+	line-height: 1.5;
+	padding: 4em 1em;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:1.15em;
+	font-family: "Arial Unicode MS", "Times New Roman", "Gargi";
+	}
+</style>
+
+So many ideas, so little time...
+</br>
+</br>
+
+Prerequisite:
+What skills are <i>actually</i> important for being a successful data scientist?
+<br>
+I've applied to almost 100 jobs so far in my search, and kept records of all of
+the job postings. Let's write a Python script to scrape all of the descriptions
+and analyze for technical keywords. I'm going to use git to host all of the code
+files, but I'll link them on this page.
+
+</br></br><big><b>The Scraper</b></big>
+I wrote a little script in python to count words that appear in job postings.
+After removing common words, we're left with a histogram of words like this:
+
+
+It seems important to learn SQL and how to deploy a model in real-time.
+</br></br><big><b>Project Design</b></big>
+I'm a recreational fly fisher (in Missoula, MT, who isn't?). The
+"recreational" title means that I sometimes can't identify a bug that I find in
+the river or what fly matches it. Flies are bits of foam and hair that are
+designed to look like certain bugs, either on top of the water (dry flies) or
+underneath (nymphs). Initally, I'm going to use a pretrained model (some image
+classification model, like a ResNet) as an image embedder, and train it on
+paired data in a semi-supervised fasion.
+The pairs will consist of a real-life bug and the fly that best imitates it. 
+There are a couple ways to skin this cat, but first is the data collection, then
+maybe some labelling.
+See below for a conceptual diagram of the flow of the project.
+<br><br> 
+0. Identify in-demand skills.
+I wrote a script to do this, but realized that domain expert knowledge would be
+much more useful. So I've decided to learn SQL and how to host a website (with a
+continuously deployed ML model!) on Google App Engine. Often job requirements
+ask how you've deployed and monitored models, so I'm going to do that.
+
+<br> 
+1. Collect image data by scraping the web. 
+In process. The dataset is going to be a little more hands-on than I previously
+thought. I'm going to MVP the model and make a website that is modular enough to
+accept any trained model and database.
+<br> 
+2. Add said data into a MySQL database.
+<br> 
+3. Fine-tune a model to classify the flies (imitation and real) into their
+classes - this will force the model to distinguish between different flies.
+<br> 
+4. Get pairs of flies that look similar (manual annotation), and use a
+contrastive loss (SimCLR) to push their embeddings together.
+<br>
+5. Write a Google App Engine app (javascript?) that ingests a picture, searches it against the
+vector database, and provides a few fly suggestions.
+
+</BODY>
+</HTML>

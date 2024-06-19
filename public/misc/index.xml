@@ -2,11 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tom Colligan</title>
-    <link>https://tcolligan.org/misc/</link>
+    <link>http://localhost:1313/misc/</link>
     <description>Recent content on Tom Colligan</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://tcolligan.org/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jun 2024 11:23:46 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Year in Review</title>
+      <link>http://localhost:1313/misc/2024-year-in-review/</link>
+      <pubDate>Wed, 19 Jun 2024 11:23:46 -0600</pubDate>
+      <guid>http://localhost:1313/misc/2024-year-in-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2023 Year in Review</title>
+      <link>http://localhost:1313/misc/2023-year-in-review/</link>
+      <pubDate>Wed, 19 Jun 2024 11:23:41 -0600</pubDate>
+      <guid>http://localhost:1313/misc/2023-year-in-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Large Language Models</title>
+      <link>http://localhost:1313/misc/large-language-models/</link>
+      <pubDate>Wed, 19 Jun 2024 11:23:16 -0600</pubDate>
+      <guid>http://localhost:1313/misc/large-language-models/</guid>
+      <description>The masked language modeling (MLM) objective plus reinforcement learning with human feedback (RLHF) can only get us so far in the search for AGI. There has to be a paradigm shift if progress is to continue - for example, algorithms that can generate their own training data to iteratively improve on.
+The issue, though, is that the search space of possible actions for a human-like agent is poorly defined compared to a game like chess or Go (the other RL algorithms that train agents to solve problems in 3-d environments are very impressive but similar in their constraints).</description>
+    </item>
   </channel>
 </rss>

@@ -92,6 +92,17 @@ params:
       products](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2)
       on the US Greenhouse Gas Center website. In the past, Tom has been a research scientist in Machine Learning at the University of Arizona and University of Montana."
 
+  socialIcons:
+    - name: x
+      url: "https://x.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+    - name: email
+      url: "https://github.com/"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=dnRnHswAAAAJ&hl=en"
 
   analytics:
     google:
@@ -146,4 +157,3 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-

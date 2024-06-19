@@ -112,9 +112,9 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: resume
-      name: resume
-      url: /resume/
+    - identifier: cv
+      name: cv
+      url: "/cv.pdf"
       weight: 10
     - identifier: misc
       name: misc

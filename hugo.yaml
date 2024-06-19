@@ -69,7 +69,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "About"
-    Content: "Tom is a [scientific software engineer](https://tcolligan.org/scientific-software-engineer.html) at NASA Goddard Space Flight Center
+    Content: "Tom is a [scientific software engineer](/content/scientific-software-engineer.md) at NASA Goddard Space Flight Center
       currently working on operationalizing the LPJ-EOSIM Dynamic Global
       Vegetation model.
       He's particularly interested in writing [simple

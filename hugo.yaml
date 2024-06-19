@@ -77,7 +77,7 @@ params:
     imageUrl: "headshot.jpeg"
     imageWidth: 300
     imageHeight: 300
-    imageTitle: my image
+    imageTitle: Tom at a lake in N.W. Montana
 
   # home-info mode
   homeInfoParams:

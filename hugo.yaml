@@ -1,0 +1,137 @@
+baseURL: https://tcolligan.org/
+languageCode: en-us
+title: Tom Colligan
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Tom Colligan
+  description: "Tom Colligan's personal website"
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disablehljs: true # to disable highlight.js
+    # disablefingerprinting: true
+    favicon: "/favicon.ico"
+
+  label:
+    text: "Tom Colligan"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "About"
+    Content: "Tom is a [scientific software engineer](scientific-software-engineer.html) at NASA Goddard Space Flight Center
+      currently working on operationalizing the LPJ-EOSIM Dynamic Global
+      Vegetation model.
+      He's particularly interested in writing [simple
+      code](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201)
+      to enable impactful science and engineering, and believes that good software
+      is a research accelerant. He's the main author of the
+      [LPJ-EOSIM Wetland Methane
+      products](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2)
+      on the US Greenhouse Gas Center website. In the past, Tom has been a research scientist in Machine Learning the University of Arizona and University of Montana." 
+
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: resume
+      name: resume
+      url: /resume/
+      weight: 10
+    - identifier: mis
+      name: misc
+      url: /misc/
+      weight: 30
+    - identifier: meet
+      name: meet
+      url: /calendar.html
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+

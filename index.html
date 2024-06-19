@@ -1,40 +1,92 @@
 <HTML>
-
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+</header>
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
 <TITLE>Thomas Colligan</TITLE>
 
-<style type="text/css">
-	a{text-decoration:none;}
-	a:visited{color:#0E547F;}
-	a:link{color:#0E547F;}
-	a:hover{text-decoration:none;}
-	p.ex
-	{height:auto; 
-	width:500px;
-	text-align:justify;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Colligan - Software Engineer</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<style>
+    body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	color: #333;
+	line-height: 1.6;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px;
     }
-    .alignleft { float: left; }
-    .alignright { float: right; }
-    hr
-    { width:800px; }
-	body
-	{
-	text-align:justify;
-	line-height: 1.5;
-	padding: 4em 1em;
-	width:800px;
-	margin-left:auto;
-	margin-right:auto;
-	font-size:1.15em;
-	font-family: "Arial Unicode MS", "Times New Roman", "Gargi";
-	}
+    a {
+	text-decoration: none;
+	color: #007BFF;
+    }
+    a:hover {
+	text-decoration: underline;
+    }
+    h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+    }
+    h2 {
+	font-size: 24px;
+	margin-top: 20px;
+    }
+    p {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #000000
+    }
+    img {
+	float: right;
+	width: 300px;
+	margin: 0 0 20px 20px;
+    }
+    header {
+	background-color: #f5f5f5; /* Background color for the header */
+	color: #333; /* Text color */
+	padding: 10px 0; /* Padding at the top and bottom of the header */
+	text-align: center;
+    }
+
+    nav ul {
+	list-style: none; /* Remove default list styles */
+	padding: 0;
+    }
+
+    nav ul li {
+	display: inline; /* Display list items horizontally */
+	margin-right: 20px; /* Space between navigation links */
+    }
+
+    nav ul li:last-child {
+	margin-right: 0; /* Remove margin from the last link to avoid extra space */
+    }
+
+    nav ul li a {
+	text-decoration: none; /* Remove underline from links */
+	color: #333; /* Link text color */
+    }
+
+    nav ul li a:hover {
+	text-decoration: underline; /* Underline on hover */
+    }
 </style>
 
 
-<style type="text/css"></style></head><body><body>
-<img style="float:right" width="300" src="images/headshot.jpeg" alt="thomas colligan" hspace="30px">
+<img src="images/headshot.jpeg" alt="thomas colligan" hspace="30px">
 <h1 style="margin-bottom:2mm">Thomas Colligan</h1>
 
 colligan AT umd DOT edu
@@ -42,10 +94,11 @@ colligan AT umd DOT edu
 <p>
 
 I am currently a software engineer at <a href="https://essic.umd.edu/joom2/">UMD
-    ESSIC</a>, working on making climate models more accessible.
-Before that, I was an ML Engineer/Data Scientist/student mentor in the <a href="http://wheelerlab.org">Wheeler Lab</a>
-at the University of Arizona. My focus there was on developing machine learning algorithms to
-solve problems in biology. I also advised students, which was very rewarding. 
+    ESSIC</a>/<a href="https://www.nasa.gov/goddard/">NASA GSFC</a> working on
+making climate models more accessible. Before that, I was an ML Engineer/Data
+Scientist/student mentor in the <a href="http://wheelerlab.org">Wheeler Lab</a>
+at the University of Arizona. My research focus there was on developing machine
+learning algorithms to solve problems in biology. 
 
 I've also led/co-led the University of Montana Machine Learning Reading group (paper list <a href="group.html">here</a>).
 
@@ -62,23 +115,25 @@ I've also led/co-led the University of Montana Machine Learning Reading group (p
 
 <h2>Publications</h2>
 <b>DISCO: A deep learning ensemble for uncertainty-aware
-segmentation of acoustic signals</b> <a href="https://www.biorxiv.org/content/10.1101/2023.01.24.525459v2.full.pdf">[link]<a>
+segmentation of acoustic signals</b> <a
+href="https://www.biorxiv.org/content/10.1101/2023.01.24.525459v2.full.pdf">[link]</a>
 <p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
 Thomas Colligan, Kayla Irish, Douglas J Emlen, and Travis J Wheeler.
-</br>
+<br>
 <i>PLOS ONE, 2023</i>
 </p>
 
 
 <b>A Deep Learning Approach to Mapping Irrigation Using Landsat: IrrMapper
-    U-Net</b> <a href="https://ieeexplore.ieee.org/document/9775700">[link]<a>
+    U-Net</b> <a href="https://ieeexplore.ieee.org/document/9775700">[link]</a>
 <p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
 Thomas Colligan, David Ketchum, Douglas Brinkerhoff, and Marco Maneta.
 </br>
 IEEE Transactions on Geosciences and Remote Sensing, 2022</i>
 </p>
 
-<b>Drugsniffer: An Open Source Workflow for Virtually Screening Billions of Molecules for Binding Affinity to Protein Targets <a href="https://www.frontiersin.org/articles/10.3389/fphar.2022.874746/full">[link]<a>
+<b>Drugsniffer: An Open Source Workflow for Virtually Screening Billions of
+    Molecules for Binding Affinity to Protein Targets</b> <a href="https://www.frontiersin.org/articles/10.3389/fphar.2022.874746/full">[link]</a>
 <p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
 Venkatraman et al.
 </br>
@@ -86,14 +141,16 @@ Frontiers in Pharmacology, 2022</i>
 </p>
 
 <b>Detection of stratospheric gravity waves induced by the total solar eclipse of July 2, 2019
-</b> <a href="https://www.nature.com/articles/s41598-020-75098-2">[link]<a>
+</b> <a href="https://www.nature.com/articles/s41598-020-75098-2">[link]</a>
 <p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
 Thomas Colligan, Jennifer Fowler, Jaxen Godfrey & Carl Spangrude
 </br>
 Nature Scientific Reports, 2020
 </p>
 
-<b>Measuring ARTSE2017: Results from Wyoming and New York</b><a href="https://journals.ametsoc.org/view/journals/bams/100/6/bams-d-17-0331.1.xml"> [link]<a>
+<b>Measuring ARTSE2017: Results from Wyoming and New York</b><a
+    href="https://journals.ametsoc.org/view/journals/bams/100/6/bams-d-17-0331.1.xml">
+    [link]</a>
 <p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
 Jennifer Fowler, Junhong Wang, Deborah Ross, Thomas Colligan, and Jaxen Godfrey
 </br>

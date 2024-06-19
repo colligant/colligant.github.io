@@ -45,6 +45,8 @@ params:
     # disablehljs: true # to disable highlight.js
     # disablefingerprinting: true
     favicon: "favicon.ico"
+    favicon16x16: "favicon.ico"
+    favicon32x32: "favicon.ico"
 
   label:
     text: "Tom Colligan"
@@ -76,21 +78,12 @@ params:
     imageUrl: "headshot.jpeg"
     imageWidth: 300
     imageHeight: 300
-    imageTitle: Tom at a lake in N.W. Montana
+    imageTitle: tom at a lake in NW MT
 
   # home-info mode
   homeInfoParams:
     Title: "About"
-    Content: "Tom is a [scientific software engineer](/sse) at NASA Goddard Space Flight Center
-      currently working on operationalizing the LPJ-EOSIM Dynamic Global
-      Vegetation model.
-      He's particularly interested in writing [simple
-      code](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201)
-      to enable impactful science and engineering, and believes that good software
-      is a research accelerant. He's the main author of the
-      [LPJ-EOSIM Wetland Methane
-      products](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2)
-      on the US Greenhouse Gas Center website. In the past, Tom has been a research scientist in Machine Learning at the University of Arizona and University of Montana."
+    Content: " "
 
   socialIcons:
     - name: x

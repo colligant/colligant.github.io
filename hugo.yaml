@@ -116,10 +116,10 @@ menu:
       name: cv
       url: "/cv.pdf"
       weight: 10
-    - identifier: misc
-      name: misc
-      url: /misc/
-      weight: 30
+    # - identifier: misc
+    #   name: misc
+    #   url: /misc/
+    #   weight: 30
     - identifier: meet
       name: meet
       url: /calendar.html

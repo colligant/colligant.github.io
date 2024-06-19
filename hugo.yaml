@@ -69,7 +69,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "About"
-    Content: "Tom is a [scientific software engineer](/content/scientific-software-engineer.md) at NASA Goddard Space Flight Center
+    Content: "Tom is a [scientific software engineer](/sse) at NASA Goddard Space Flight Center
       currently working on operationalizing the LPJ-EOSIM Dynamic Global
       Vegetation model.
       He's particularly interested in writing [simple
@@ -116,7 +116,7 @@ menu:
       name: resume
       url: /resume/
       weight: 10
-    - identifier: mis
+    - identifier: misc
       name: misc
       url: /misc/
       weight: 30

@@ -32,6 +32,21 @@ The issue, though, is that the search space of possible actions for a human-like
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/clean-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clean-code/</guid>
+      <description>clean code /klēn/ /kōd/ • future-proofing your software
+During my Master&amp;rsquo;s in Computer Science, I was focused on applying code as a means to an end. I was working intensively in satellite computer vision and as such my coursework mostly consisted of math and machine learning, not necessarily software design. However, I quickly realized during one of my optimization processes that writing complex code tends to lead to unnecessary mental overhead, increased development time, and the tendency to curse yourself a few months down the road (why did I write it like that?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/optimization/</guid>
+      <description>optimization, a semi-formal process for resolving workflow blockers</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/sse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/sse/</guid>

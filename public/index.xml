@@ -6,44 +6,22 @@
     <description>Recent content on Tom Colligan</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jun 2024 11:23:46 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2024 Year in Review</title>
-      <link>http://localhost:1313/misc/2024-year-in-review/</link>
-      <pubDate>Wed, 19 Jun 2024 11:23:46 -0600</pubDate>
-      <guid>http://localhost:1313/misc/2024-year-in-review/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2023 Year in Review</title>
-      <link>http://localhost:1313/misc/2023-year-in-review/</link>
-      <pubDate>Wed, 19 Jun 2024 11:23:41 -0600</pubDate>
-      <guid>http://localhost:1313/misc/2023-year-in-review/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Large Language Models</title>
-      <link>http://localhost:1313/misc/large-language-models/</link>
-      <pubDate>Wed, 19 Jun 2024 11:23:16 -0600</pubDate>
-      <guid>http://localhost:1313/misc/large-language-models/</guid>
-      <description>The masked language modeling (MLM) objective plus reinforcement learning with human feedback (RLHF) can only get us so far in the search for AGI. There has to be a paradigm shift if progress is to continue - for example, algorithms that can generate their own training data to iteratively improve on.
-The issue, though, is that the search space of possible actions for a human-like agent is poorly defined compared to a game like chess or Go (the other RL algorithms that train agents to solve problems in 3-d environments are very impressive but similar in their constraints).</description>
-    </item>
     <item>
       <title></title>
       <link>http://localhost:1313/clean-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/clean-code/</guid>
       <description>clean code /klēn/ /kōd/ • future-proofing your software
-During my Master&amp;rsquo;s in Computer Science, I was focused on applying code as a means to an end. I was working intensively in satellite computer vision and as such my coursework mostly consisted of math and machine learning, not necessarily software design. However, I quickly realized during one of my optimization processes that writing complex code tends to lead to unnecessary mental overhead, increased development time, and the tendency to curse yourself a few months down the road (why did I write it like that?</description>
+During my Master&amp;rsquo;s in Computer Science, I focused on applying code as a means to an end. My work in satellite computer vision involved extensive coursework in math and machine learning, but not necessarily software design. However, I quickly realized during one of my optimization processes that writing complex code tends to lead to unnecessary mental overhead, increased development time, and the tendency to curse yourself a few months down the road (why did I write it like that?</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/optimization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/optimization/</guid>
-      <description>optimization, a semi-formal process for resolving workflow blockers</description>
+      <description>optimization /ˌäptəməˈzāSH(ə)n/ • the process of examining your workflow to notice and resolve blockers
+Some years ago, I noticed that my deep learning workflows all had one thing in common: It was near impossible to reproduce every experiment I ran without a lot of work. I kept good notes but sometimes what you really need is the exact code of your experiment, plus a description. Ideally, you&amp;rsquo;d track everything on Git, but paths change, data loaders evolve, and minor tweaks like adjusting n_layers from 10 to 12 don&amp;rsquo;t always fit neatly into version control.</description>
     </item>
     <item>
       <title></title>

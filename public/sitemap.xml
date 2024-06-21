@@ -5,19 +5,12 @@
     <loc>http://localhost:1313/misc/</loc>
     <lastmod>2024-06-19T11:23:46-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/misc/2024-year-in-review/</loc>
-    <lastmod>2024-06-19T11:23:46-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-19T11:23:46-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/misc/2023-year-in-review/</loc>
-    <lastmod>2024-06-19T11:23:41-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/misc/large-language-models/</loc>
-    <lastmod>2024-06-19T11:23:16-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/clean-code/</loc>
+  </url><url>
+    <loc>http://localhost:1313/optimization/</loc>
   </url><url>
     <loc>http://localhost:1313/sse/</loc>
   </url><url>

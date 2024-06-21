@@ -57,23 +57,13 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: " "
-    subtitle: "Tom is a [scientific software engineer](/sse) at NASA Goddard Space Flight Center
-      currently working on operationalizing the LPJ-EOSIM Dynamic Global
-      Vegetation model.
-      He's particularly interested in writing [simple
-      code](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201)
-      to enable impactful science and engineering, and believes that good software
-      is a research accelerant. He's the main author of the
-      [LPJ-EOSIM Wetland Methane
-      products](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2)
-      on the US Greenhouse Gas Center website. In the past, Tom has been a research scientist in Machine Learning at the University of Arizona and University of Montana.
-      \n
-      \n
-      <br>
-      In addition to his current work on the LPJ-EOSIM model, he's worked on a diverse range of projects including geospatial machine learning to classify irrigation with Landsat data,
-      CNNs for sound classification, streamflow prediction, novel contrastive embedding techniques for protein retrieval, and eclipse-induced gravity
-      wave detection. The most common throughline in his career has been the ability to write clean analytical code to further
-      research and development goals."
+    subtitle: |
+      Hi! I’m Tom Colligan, a [scientific software engineer](/sse) by training, currently working at NASA Goddard Space Flight Center. At NASA, I lead our efforts to operationalize the LPJ-EOSIM Dynamic Global Vegetation model, a flagship biospheric carbon model. I am interested in writing code to enable science and engineering projects that promote environmental sustainability and conservation, and believe that [clean code](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201) is a research accelerant.
+      
+      I am the main author of the [LPJ-EOSIM Wetland Methane](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2) products on the US Greenhouse Gas Center website. Notably, this project provides state of the art estimates of wetland methane emissions on a near-real-time basis, allowing quick quantification and measuring of the response of wetlands to climate change. In the past, I was employed as a research scientist at the University of Arizona and University of Montana. My main research focus was basic machine learning in bioinformatics
+      In addition to my current work on the LPJ-EOSIM model at NASA, I am involved in a range of projects including geospatial machine learning to classify irrigation with Landsat data, CNNs for sound classification, streamflow prediction, novel contrastive embedding techniques for protein retrieval, and eclipse-induced gravity wave detection.
+      The most common throughline in my career has been the ability to write clean analytical code to further research and development goals.
+
         
     imageUrl: "headshot.jpeg"
     imageWidth: 300

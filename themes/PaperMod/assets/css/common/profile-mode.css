@@ -8,6 +8,7 @@
     align-items: flex-start;
     min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
     text-align: left;
+    white-space: pre-wrap;
 }
 .main a {
     color: #0E547F;

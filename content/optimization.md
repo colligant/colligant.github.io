@@ -23,4 +23,4 @@ every month or so. It almost always leads to greater efficiency, exposure to new
 problems.
 
 [^1] There are many solutions to this problem. It's often not necessary to roll your own solution. Part of a successful
-optimization process is finding the right Google incantation.
+optimization process is finding relevant software to apply to your blockers.

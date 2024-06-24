@@ -3,7 +3,7 @@ title: ""
 layout: "about"
 ---
 
-*clean code /klēn/ /kōd/ • future-proofing your software*  
+*clean code /klēn kōd/ • future-proofing your software*  
 
 During my Master's in Computer Science, I focused on applying code as a means to an end. My
 work in satellite computer vision involved extensive coursework in math and machine learning, 

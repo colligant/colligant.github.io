@@ -7,7 +7,7 @@ layout: "about"
 
 During my Master's in Computer Science, I focused on applying code as a means to an end. My
 work in satellite computer vision involved extensive coursework in math and machine learning, 
-but not necessarily software design. However, I quickly realized during one of my [optimization](/optimization) processes
+but not necessarily software design. However, I quickly realized during a [personal review](/review) process
 that writing complex code tends to lead to unnecessary mental overhead, increased
 development time, and the tendency to curse yourself a few months down the road (_why did I write it like that?_). 
 

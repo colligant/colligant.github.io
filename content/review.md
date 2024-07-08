@@ -3,7 +3,7 @@ title: ""
 layout: "about"
 ---
 
-*optimization /ˌäptəməˈzāSH(ə)n/ • the process of examining your workflow to notice and resolve blockers*
+*personal review /ˌäptəməˈzāSH(ə)n/ • the process of examining your workflow to resolve blockers*
 
 Some years ago, I noticed that my deep learning workflows all had one thing in common: It was near impossible to
 reproduce every experiment I ran without a lot of work. I kept good notes but sometimes what you really need is the
@@ -23,4 +23,4 @@ every month or so. It almost always leads to greater efficiency, exposure to new
 problems.
 
 [^1] There are many solutions to this problem. It's often not necessary to roll your own solution. Part of a successful
-optimization process is finding relevant software to apply to your blockers.
+review process is finding relevant software to apply to your blockers.

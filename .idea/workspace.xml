@@ -6,8 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="b1f0e9d4-8c84-4461-892b-b2f068341bbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/clean-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/clean-code.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/optimization.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/review.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/misc/2023-year-in-review.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/misc/2024-year-in-review.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/misc/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/misc/large-language-models.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/reflections.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/reflections.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/2023-year-in-review/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/2024-year-in-review/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/large-language-models/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/llm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/misc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/misc/page/1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/scientific-software-engineer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/reflections/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/reflections/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scientific-software-engineer/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

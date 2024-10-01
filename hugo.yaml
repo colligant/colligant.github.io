@@ -78,7 +78,7 @@ params:
     - name: stackoverflow
       url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/colligant"
     - name: email
       url: "https://github.com/"
     - name: googlescholar
@@ -118,14 +118,14 @@ menu:
     - identifier: cv
       name: cv
       url: "/cv.pdf"
-      weight: 10
-    # - identifier: misc
-    #   name: misc
-    #   url: /misc/
-    #   weight: 30
+      weight: 30
     - identifier: meet
       name: meet
       url: /calendar.html
+      weight: 30
+    - identifier: reflections
+      name: reflections
+      url: /reflections
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

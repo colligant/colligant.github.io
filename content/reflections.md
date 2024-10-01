@@ -9,7 +9,7 @@ layout: "about"
 
 Every year, UMD Earth System Science Interdisciplinary Center (ESSIC) asks us to
 submit a formal review, which includes listing the achievements over the
-last year. I wrote a lot of code this year (11k+ lines, tested),
+past (fiscal) year. I wrote a lot of code this year (11k+ lines, tested),
 published data on LPDAAC, and ended up traveling for work quite a bit. I became 
 _much_ more familiar with the LPJ-EOSIM ecosystem, got on a few grants, 
 and am going to be an author on at least two papers. If everything continues 

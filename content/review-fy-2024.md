@@ -35,7 +35,10 @@ spent reflecting can lead to massive workflow speedups).
   my ssh alias so if the node is down I don't get rejected?)
 - Develop a data management plan for production LPJ simulations. Right now, everything is sitting in a directory on the cluster with timestamps. I'd
   like to formalize the process of running production simulations.
-
+- I looked back at a timeline that I created in February of this year. It was quite ambitious and as a result some things _didn't even get touched_.
+For example, I was certain that I could do GCP, ML based downscaling and deployment, on demand NBP and CH4 simulations, and write a website for a methane newsletter. Of course, 
+my taskload varied with ICOS, VICC, writing a paper, and the fact that some of my work depended on outside timelines. Still, my goal for this year is to write more realistic timelines.
+ 
 
 *Aspirations*
 
@@ -49,4 +52,4 @@ pipeline to AWS and codifying a release structure so that future users can
 update LPJ and downstream products with minimal effort.
 
 Finally, I'd like to connect with a mentor at NASA to help me with software
-development... and career growth generally.
+development and career growth generally.

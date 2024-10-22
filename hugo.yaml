@@ -119,10 +119,6 @@ menu:
       name: cv
       url: "/cv.pdf"
       weight: 30
-    - identifier: meet
-      name: meet
-      url: /calendar.html
-      weight: 30
     - identifier: year-in-review
       name: year-in-review
       url: /year-in-review

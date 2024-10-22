@@ -3,34 +3,28 @@ title: ""
 layout: "about"
 ---
 
-*reflections*  / rəˈflekSH(ə)ns / • Achievements, thoughts on work
+*year in review  / yir in rəˈvyo͞o / • Comprehensive account of accomplishments*
+# **FY 2025**
 
-# **2024**
+ - Fixed an uninitialized memory bug in LPJ-EOSIM that led to non-deterministic results
+on some systems
+
+
+# **FY 2024**
 
 Every year, UMD Earth System Science Interdisciplinary Center (ESSIC) asks us to
 submit a formal review, which includes listing the achievements over the
 past (fiscal) year. I wrote a lot of code this year (11k+ lines, tested),
 published data on LPDAAC, and ended up traveling for work quite a bit. I became 
 _much_ more familiar with the LPJ-EOSIM ecosystem, got on a few grants, 
-and am going to be an author on at least two papers. If everything continues 
-as is, it was a somewhat auspicious year [^2].
+and am going to be an author on at least two papers. It felt like a somewhat auspicious year [^2].
+[Despite it being a productive year, I still identified blockers that slow down my workflows.](/review-fy-2024)
 
-I have a few goals for the upcoming year. Really, there are a ton of low 
-hanging ML fruits in this field, so I'd like to be involved in one or two of 
-those projects. I'd like to hone my writing skills so that 
-publications don't become such a burden. Technically, I'm still making
-strides: learning AWS, unit testing, even investing time into pedestrian things
-like IDE setup. One specific thing that I'd like to achieve is pushing our entire analysis
-pipeline to AWS and codifying a release structure so that future users can 
-update LPJ and downstream products with minimal effort. 
-Finally, I'd like to connect with a mentor at NASA to help me with software 
-development and attend a conference on scientific software dev.
-
-So, let's recap, starting at coolest.
+That being said, let's recap, starting at coolest.
 
 - Submitted LPJ-EOSIM simulations to TRENDYv13, the most recent version of 
   the Global Carbon Budget's land surface ensemble (and will be a coauthor!)
-- Presented a plenary (read: keynote) presentation at [ICOS 2024](https://www.icos-cp.eu/news-and-events/science-conference/icos2024sc/plenary-speakers#:~:text=to%20these%20regions.-,Thomas%20Colligan,-Thomas%20Colligan%20is), on our work to do near real time carbon flux 
+- Presented a plenary (keynote) presentation at [ICOS 2024](https://www.icos-cp.eu/news-and-events/science-conference/icos2024sc/plenary-speakers#:~:text=to%20these%20regions.-,Thomas%20Colligan,-Thomas%20Colligan%20is), on our work to do near real-time carbon flux 
   anomaly detection. ![icos2024](/icos.PNG)*Me, presenting "A Near Real 
   Time Framework for the Detection and Attribution of Carbon Flux Anomalies" at 
   ICOS 2024 (in 

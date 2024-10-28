@@ -38,6 +38,8 @@ spent reflecting can lead to massive workflow speedups).
 - I looked back at a timeline that I created in February of this year. It was quite ambitious and as a result some things _didn't even get touched_.
 For example, I was certain that I could do GCP, ML based downscaling and deployment, on demand NBP and CH4 simulations, and write a website for a methane newsletter. Of course, 
 my taskload varied with ICOS, VICC, writing a paper, and the fact that some of my work depended on outside timelines. Still, my goal for this year is to write more realistic timelines.
+- I often do exploratory data analysis and so far have been copy-pasting code from one library/jupyter notebook to another, resulting in slower workflows and cluttered EDA scripts.
+I'm going to make a Python library to hold my workhorse functions (`nc_tools`?)
  
 
 *Aspirations*

@@ -17,11 +17,12 @@ During my Master&amp;rsquo;s in Computer Science, I focused on applying code as 
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/reflections/</link>
+      <link>http://localhost:1313/review-fy-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/reflections/</guid>
-      <description>reflections / rəˈflekSH(ə)ns / • Achievements, thoughts on work
-2024 Every year, UMD Earth System Science Interdisciplinary Center (ESSIC) asks us to submit a formal review, which includes listing the achievements over the last year. I wrote a lot of code this year (11k+ lines, tested), published data on LPDAAC, and ended up traveling for work quite a bit. I became much more familiar with the LPJ-EOSIM ecosystem, got on a few grants, and am going to be an author on at least two papers.</description>
+      <guid>http://localhost:1313/review-fy-2024/</guid>
+      <description>blockers from fiscal year 2024, plans for next non-exhaustive and mutable list
+The cluster is down today, so I&amp;rsquo;m working on this in the meantime (as time spent reflecting can lead to massive workflow speedups).
+The LPJ pipeline is starting to become a beast. It&amp;rsquo;s swelling and feels a bit unwieldy at times. I would like to transition to a true workflow management library to keep everything in pure Python. I&amp;rsquo;ve noticed that when I need to write code fast the quality really deteriorates, and requires refactoring later.</description>
     </item>
     <item>
       <title></title>
@@ -38,6 +39,15 @@ Some years ago, I noticed that my deep learning workflows all had one thing in c
       <guid>http://localhost:1313/sse/</guid>
       <description>scientific software engineer /ˌsīənˈtifik ˈsôf(t)ˌwer ˌenjəˈnir/ • Jack of all trades, master of some
 Scientific software engineers are often tasked with &amp;ldquo;making things work&amp;rdquo;. This means jumping headfirst into an unfamiliar field (biogeochemistry and biogeography from physics and computer science, for example) and using technical and formal problem-solving skills to make rapid progress. Collaboration and communication with diverse stakeholders is crucial, given the unfamiliar terrain that SSEs are exposed to from day one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/year-in-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/year-in-review/</guid>
+      <description>year in review / yir in rəˈvyo͞o / • Granular account of accomplishments
+FY 2025 Presented a poster on low latency biospheric carbon modeling at AGU 2024. The aforementioned poster. I was more interested in the whole biogeosciences part of the conference but submitted to a computational section. More info for next year&amp;rsquo;s AGU!
+I learned quite a bit from AGU and as always came away with many interesting ideas.</description>
     </item>
   </channel>
 </rss>

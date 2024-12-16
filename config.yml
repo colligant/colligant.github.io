@@ -1,4 +1,5 @@
 baseURL: "https://examplesite.com/"
+
 title: ExampleSite
 paginate: 5
 theme: PaperMod

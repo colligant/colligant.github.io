@@ -11,6 +11,7 @@ layout: "about"
  - Presented a poster on low latency biospheric carbon modeling at AGU 2024. ![agu2025](/AGU_2024_poster.png)*The aforementioned poster. I was more interested in the whole biogeosciences part of the conference but submitted to a computational section. More info for next  year's AGU!*
   
    I learned quite a bit from AGU and as always came away with many interesting ideas.
+ - [Global Carbon Budget 2024](https://essd.copernicus.org/preprints/essd-2024-519/) was published. Fossil fuel emissions continue to rise through 2023, and the land sink suffered.
  - Implemented global parameter perturbation runs (many many many cores)
  - Fixed an uninitialized memory bug in LPJ-EOSIM that led to non-deterministic results
 on some systems

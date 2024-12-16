@@ -4,7 +4,9 @@ layout: "about"
 ---
 
 *year in review  / yir in rəˈvyo͞o / • Granular account of accomplishments*
+
 # **FY 2025**
+
 
  - Presented a poster on low latency biospheric carbon modeling at AGU 2024. ![agu2025](/AGU_2024_poster.png)*The aforementioned poster. I was more interested in the whole biogeosciences part of the conference but submitted to a computational section. More info for next  year's AGU!*
   

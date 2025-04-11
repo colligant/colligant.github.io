@@ -7,7 +7,8 @@ layout: "about"
 
 # **FY 2025**
 
-
+ - Contributed to a paper on best practices in geoscientific model software development
+ - Recalibrated the LPJ-EOSIM model, read a bunch of literature, and began writing a manuscript detailing the improvements to LPJ
  - Presented a poster on low latency biospheric carbon modeling at AGU 2024. ![agu2025](/AGU_2024_poster.png)*The aforementioned poster. I was more interested in the whole biogeosciences part of the conference but submitted to a computational section. Next year, I'll submit to biogeosciences.*
   
    I learned quite a bit from AGU and as always came away with many interesting ideas.

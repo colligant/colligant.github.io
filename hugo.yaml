@@ -25,13 +25,13 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -60,7 +60,7 @@ params:
     subtitle: |
       Hi! I’m Tom Colligan, a [scientific software engineer](/sse) by training, currently working at NASA Goddard Space Flight Center. At NASA, I lead our efforts to operationalize the LPJ-EOSIM Dynamic Global Vegetation model, a process-based model developed for carbon cycle applications. Currently, I'm interested in carbon cycle modeling and ML, and believe that [clean code](/clean-code) is a research accelerant.
       
-      I am the main author of the [LPJ-EOSIM Wetland Methane](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2) products on the US Greenhouse Gas Center website, and the LPJ-EOSIM products on the [Land Processes Distributed Active Archive Center](https://lpdaac.usgs.gov/product_search/?collections=LPJ-EOSIM&view=list&sort=title). This project provides state of the art estimates of wetland methane emissions on a near-real-time basis, allowing quick quantification of the response of wetlands to climate change. In the past, I was employed as a research scientist at the University of Arizona and University of Montana. My main research focus was basic machine learning in bioinformatics, where I applied LLMs to protein retrieval.
+      I am the main author of the [LPJ-EOSIM Wetland Methane](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v1) products on the US Greenhouse Gas Center website, and the LPJ-EOSIM products on the [Land Processes Distributed Active Archive Center](https://lpdaac.usgs.gov/product_search/?collections=LPJ-EOSIM&view=list&sort=title). This project provides state of the art estimates of wetland methane emissions on a near-real-time basis, allowing quick quantification of the response of wetlands to climate change. In the past, I was employed as a research scientist at the University of Arizona and University of Montana. My main research focus was basic machine learning in bioinformatics, where I applied LLMs to protein retrieval.
       I have extensive experience in carbon cycle modeling, deep learning, machine learning, HPC systems, and AWS.
 
         
@@ -75,8 +75,6 @@ params:
     Content: " "
 
   socialIcons:
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/colligant"
     - name: email
@@ -96,11 +94,6 @@ params:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -122,6 +115,10 @@ menu:
     - identifier: year-in-review
       name: year-in-review
       url: /year-in-review
+      weight: 30
+    - identifier: posts
+      name: posts
+      url: /posts
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

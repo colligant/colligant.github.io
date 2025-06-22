@@ -1,7 +1,7 @@
 +++
 title = "Carbon model super resolution!"
 date = 2025-04-10T14:40:43Z
-draft = True
+draft = true
 +++
 
  - Describe the achievement in a few sentences and a nice visual

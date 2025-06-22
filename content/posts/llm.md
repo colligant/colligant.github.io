@@ -8,7 +8,7 @@ draft = false
 
 I keep an extensive work journal, recording my ideas, problems, and solutions daily.
 Since starting my current role ~1.5 years ago I've written 16895 lines of notes.
-At 36 lines per page this comes to 469 pages, indicating that I've written about a third of _War and Peace_ [^1].
+At 36 lines per page this comes to 469 pages, indicating that I've written about a third of _War and Peace_[^1].
 
 The notes contain code snippets, rambling thoughts, and TODO lists, but also concise ideas and solutions to problems. While re-reading my notebook myself may be a useful exercise (and I do 
 reference old notes often), I figured I could use an LLM to summarize my "notes novel" for me: What are my main blockers? Achievements? Where can I optimize workflows or patterns of thought to become 
@@ -27,7 +27,7 @@ Ideally, I'd like to build a more resilient pipeline to distribute LPJ, refactor
 fast, easily configured, and QA'd simulations that automatically estimate uncertainty and incorporate multiple drivers.
 
 ### Hardware (i.e, ChatGPT) reflection
-I'm using ChatGPT 4o to reason over my notes file [^2] with the prompt derived from the first two paragraphs of this post. It came back with:
+I'm using ChatGPT o3 to reason over my notes file [^2] with the prompt derived from the first two paragraphs of this post. It came back with:
 > - Abstract your preprocessing, QA, and merge routines into reusable modules (i.e., your own internal “LPJ-utils” lib). Too many time sinks are due to ad-hoc code.
 > - Build simulation validation routines that catch common config or flag issues pre-submit.
 > - Invest in config/schema linting and pipeline dry-run logic—this would prevent bugs like unturned-on flags or missing variables.
@@ -71,11 +71,11 @@ exercise, and I've already begun thinking about how to implement some of these c
 
 Doing this reflective exercise at points during the past ~1.5 years led to significant improvements of the workflow [^4]. I'm excited to see where the next year takes me with these insights!
 
-[^1] I make no assertion that the quality of my notes is even mildly literary.
+[^1]: I make no assertion that the quality of my notes is even mildly literary.
 
-[^2] Context length, byte-pair-encoding, and the way ChatGPT processes large files means this is fine.
+[^2]: Context length, byte-pair-encoding, and the way ChatGPT processes large files means this is fine.
 
-[^3] New LPJ developers are given the github, HPC credentials, and then told to dive in. Many folks have just worked in R and have no experience with C (pointers, allocating memory, function pointers, datatypes!)
+[^3]: New LPJ developers are given the github, HPC credentials, and then told to dive in. Many folks have just worked in R and have no experience with C (pointers, allocating memory, function pointers, datatypes!)
 
-[^4] Running 100s of global simulations, increasing LPJ resolution, reading literature, writing papers, contributing to papers, pushing data to LPDAAC, formalizing new
+[^4]: Running 100s of global simulations, increasing LPJ resolution, reading literature, writing papers, contributing to papers, pushing data to LPDAAC, formalizing new
 processes in LPJ, etc, etc, etc

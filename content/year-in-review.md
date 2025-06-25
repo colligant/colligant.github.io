@@ -7,7 +7,8 @@ layout: "about"
 
 # **FY 2025**
 
- - Contributed to a paper on best practices in geoscientific model software development
+ - Used the CHELSA meterology dataset to drive LPJ - 3600x increase in resolution, 10s of Tbs of data, 50 CPU _years_ of compute, lots of engineering. Grist for the ML mill (?) (more soon!)
+ - Contributed to a [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=dnRnHswAAAAJ&sortby=pubdate&citation_for_view=dnRnHswAAAAJ:dhFuZR0502QC) on best practices in geoscientific model software development
  - Recalibrated the LPJ-EOSIM model, read a bunch of literature, and began writing a manuscript detailing the improvements to LPJ
  - Presented a poster on low latency biospheric carbon modeling at AGU 2024. ![agu2025](/AGU_2024_poster.png)*The aforementioned poster. I was more interested in the whole biogeosciences part of the conference but submitted to a computational section. Next year, I'll submit to biogeosciences.*
   
@@ -59,10 +60,10 @@ That being said, let's recap, starting at coolest.
   modernized and modularized it with Python.
 
 
-[^1] I wonder who will actually find this website. Sometimes I find myself in 
+[^1]: I wonder who will actually find this website. Sometimes I find myself in 
 the bowels of the internet looking at random personal pages, which is either 
 inspiring (wow! they are so consistent about cataloguing their thoughts!) or 
 sort of depressing (huh. they only posted once, a "hello world" sort of 
 thing. What happened?).
 
-[^2] That is, if my funding doesn't run out.
+[^2]: That is, if my funding doesn't run out.

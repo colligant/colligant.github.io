@@ -14,7 +14,7 @@ There are a ton of research opportunities that this enables. For example,
 we're involved in an effort to assess the value-add of using high resolution data in the climate/ecological model space, which will be done sometime in the fall. Stay tuned!
 
 See below for a small sample on CONUS (use the slider to compare images, and make sure to zoom in!):
-
+<div class="full-width">
 {{< rawhtml >}}
 <div class="cog-map-container">
   <div id="map" class="cog-map"></div>
@@ -116,7 +116,7 @@ window.addEventListener('load', async () => {
   map.on('move zoom resize zoomend moveend', clipLayers);
 });
 </script>
-
+</div>
 <p class="map-caption">
   Conterminous U.S. GPP for June 2016. High res (left) is CHELSA driven LPJ, low res (right) is ERA5 driven.
   0 values are set to NaN. Spatial differences are due to the differences in the input drivers.

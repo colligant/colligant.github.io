@@ -4,6 +4,9 @@ layout: "about"
 ---
 
 *year in review  / yir in rəˈvyo͞o / • Granular account of accomplishments*
+# **FY 2026 (Oct 25' - )**
+- Left NASA and started a new position as Platform Engineer at Spark Climate Solutions 
+- Sped up LPJ again, but this time only 2x. 1 hour -> 0.5 hour.
 
 # **FY 2025 (Oct '24 - Oct '25)**
 

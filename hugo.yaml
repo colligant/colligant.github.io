@@ -58,10 +58,14 @@ params:
     enabled: true # needs to be explicitly set
     title: " "
     subtitle: |
-      Hi! I’m Tom Colligan, a [scientific software engineer](/sse) by training, currently working at NASA Goddard Space Flight Center. At NASA, I lead our efforts to operationalize the LPJ-EOSIM Dynamic Global Vegetation model, a process-based model developed for carbon cycle applications. Currently, I'm interested in carbon cycle modeling and ML, and believe that [clean code](/clean-code) is a research accelerant.
+      Hi! I’m Tom Colligan. I currently work at [Spark Climate Solutions](https://www.sparkclimate.org/) as a Platform Engineer for Scientific Computing on the [WIE](https://www.sparkclimate.org/warming-induced-emissions/home) project. 
       
-      I am the main author of the [LPJ-EOSIM Wetland Methane](https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v1) products on the US Greenhouse Gas Center website, and the LPJ-EOSIM products on the [Land Processes Distributed Active Archive Center](https://lpdaac.usgs.gov/product_search/?collections=LPJ-EOSIM&view=list&sort=title). This project provides state of the art estimates of wetland methane emissions on a near-real-time basis. In the past, I was employed as a research scientist at the University of Arizona and University of Montana. My main research focus was basic machine learning in bioinformatics, where I applied LLMs to protein retrieval.
-      I have extensive experience in carbon cycle modeling, deep learning, machine learning, HPC systems, and AWS.
+      ---
+      Previously, I was a [scientific software developer](/sse) at NASA Goddard Space Flight Center, where I led the development of the LPJ-EOSIM Dynamic Global Vegetation model, a process-based model developed for carbon cycle applications. Some fun wins: I optimized LPJ to the point where ~24 hour simulations completed in ~20 minutes, increased the resolution ~3600x, and wrote a Python API for the model. 
+      Before that, I was a research scientist at the University of Arizona/University of Montana, working on was basic machine learning in bioinformatics, where I applied LLMs to protein retrieval.
+      
+      ---
+      Want to talk about GFPS, Dask, LLMs, HPC, carbon cycle modeling, ML, cloud, geospatial data, or pickleball? Drop me a line.
 
         
     imageUrl: "headshot.jpeg"

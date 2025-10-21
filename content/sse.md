@@ -17,7 +17,7 @@ product. However, using conventional software engineering techniques (unit+integ
 automatic CI/CD, containerization, orchestration tools, Agile methodologies, etc), can reduce both experiment time and
 scientific overhead.
 
-Some big wins I've achieved in my current role that I attribute to my computer science skills:
+Some big wins I've achieved in my previous role that I attribute to my computer science skills:
 
 - Sped up LPJ-EOSIM (a dynamic global vegetation model (DGVM)) >1000x on NASA's NCCS Discover HPC, fixed all sorts of bugs
 - Ported the same model to AWS, enabling multple international collaborators to run experiments

@@ -5,6 +5,9 @@ layout: "about"
 
 *year in review  / yir in rəˈvyo͞o / • Granular account of accomplishments*
 # **FY 2026 (Oct '25 - )**
+- Began implementing WIEMIP
+- Wrote a bitwise regression test harness for LPJ
+- Refactored the operational pipeline for LPJ to make output generation and requests easier, also transferred to an entirely `python` (non-cli) based API
 - Implemented an interactive nitrogen cycle in LPJ-EOSIM based on Smith et al., 2014
 - Global Carbon Budget 2025 [published](https://essd.copernicus.org/preprints/essd-2025-659/) - I contributed LPJ-EOSIM data
 - Left NASA and started a new position as Platform Engineer at Spark Climate Solutions 

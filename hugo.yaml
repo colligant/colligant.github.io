@@ -83,9 +83,17 @@ params:
     - name: github
       url: "https://github.com/colligant"
     - name: email
-      url: "https://github.com/"
+      url: "javascript:void(0)"
+      emailUser: "tom"
+      emailDomain: "sparkclimate"
+      emailTld: "org"
     - name: googlescholar
-      url: "https://scholar.google.com/citations?user=dnRnHswAAAAJ&hl=en"
+      url: "https://scholar.google.com/citations?user=e9mx3HcAAAAJ&hl=en"
+
+  schema:
+    sameAs:
+      - "https://github.com/colligant"
+      - "https://scholar.google.com/citations?user=e9mx3HcAAAAJ&hl=en"
 
   analytics:
     google:

@@ -1,0 +1,19 @@
+<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
+    {{- range site.Params.socialIcons }}
+    {{- if and (eq .name "email") .emailUser .emailDomain .emailTld }}
+    <a href="{{ .url | default "#" | safeURL }}" target="_blank" rel="noopener noreferrer me"
+        title="{{ (.title | default .name) | title }}"
+        data-contact-user="{{ .emailUser }}"
+        data-contact-domain="{{ .emailDomain }}"
+        data-contact-tld="{{ .emailTld }}"
+        onclick="this.href='mailto:'+this.dataset.contactUser+'@'+this.dataset.contactDomain+'.'+this.dataset.contactTld">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- else }}
+    <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+        title="{{ (.title | default .name) | title }}">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+    {{- end }}
+</div>

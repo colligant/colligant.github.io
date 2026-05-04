@@ -1,0 +1,35 @@
+{{- $src := .Get "src" -}}
+{{- if not $src -}}
+  {{- errorf "The notebook shortcode requires a 'src' parameter: %s" .Position -}}
+{{- end -}}
+{{- $title := .Get "title" | default "Notebook" -}}
+{{- $caption := .Get "caption" -}}
+{{- $source := .Get "source" -}}
+{{- $height := .Get "height" | default "960px" -}}
+
+<figure class="notebook-embed" style="--notebook-embed-height: {{ $height }};">
+  <div class="notebook-embed__chrome">
+    <div class="notebook-embed__dots" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="notebook-embed__title">{{ $title }}</div>
+    <div class="notebook-embed__actions">
+      <a href="{{ $src | safeURL }}" target="_blank" rel="noopener noreferrer">Open full notebook</a>
+      {{- with $source }}
+      <a href="{{ . | safeURL }}" target="_blank" rel="noopener noreferrer">Source</a>
+      {{- end }}
+    </div>
+  </div>
+  <iframe
+    class="notebook-embed__frame"
+    src="{{ $src | safeURL }}"
+    title="{{ $title }}"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+  ></iframe>
+  {{- with $caption }}
+  <figcaption class="notebook-embed__caption">{{ . }}</figcaption>
+  {{- end }}
+</figure>
